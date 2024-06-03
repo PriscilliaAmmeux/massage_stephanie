@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/amma.jpg",
+    "title": "Massage Assis ou AMMA",
+    "text": "Le massage assis également connu sous le nom de massage AMMA se pratique habillé sur une table de massage ergonomique. Son format et son type permet donc de d’adapter facilement à différents environnements comme en extérieur ou au monde du travail apportant une bulle de bienêtre à celui qui en bénéficie. Le massage Pernet de lâcher les tensions musculaires présentent dans le dos, le cou, la nuque, le crâne induisant détente et relaxation réduisant le stress.",
+    "duration": "20 minutes",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "image": "/chei.jpg",
+    "title": "Chi Nei Tsang",
+    "text": "Le Chi Nei Tsang ou « travail énergétique des organes internes » est issue de la médecine traditionnelle chinoise. Il a pour objectif de rétablir l’équilibre énergétique du corps. Le massage des organes internes permet de libérer les tensions, lever les blocages émotionnels et du stress accumulé favorisant la circulation de l’énergie vitale / Le Chi.",
+    "duration": "1h30",
+    "price": 90
+  },
+  {
+    "id": 3,
+    "image": "/cranien.jpg",
+    "title": "Réfléxologie crânienne",
+    "text": "La réflexologie crânienne consiste à la stimulation des points réflexes du visage et du crâne. Il permet d’activer la micro-circulation, de réduire le stress, d’améliorer la qualité de vie du sommeil, induisant une détente physique et psychologique.",
+    "duration": "1h30",
+    "price": 90
+  }
+]

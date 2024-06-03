@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Header from "./ui/header/header";
 import Presentation from "./ui/presentation/presentation";
+import Prestations from "./ui/prestations/prestations";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -15,8 +16,7 @@ export default function Home() {
 
       <section className="w-full flex flex-col items-center justify-center p-4">
         <Presentation />
-        <h2>Prestation de service massage</h2>
-        <p>Description de la prestation...</p>
+        <Prestations />
       </section>
 
       <footer className="w-full flex justify-between items-center p-4 bg-gray-200">
