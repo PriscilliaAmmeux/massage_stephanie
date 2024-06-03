@@ -1,18 +1,23 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import headerImage from "../../../../public/header.jpg";
-import Image from "next/image";
+import BackgroundImageRotator from "@/app/components/backgroundImageRotator/backgroundImageRotator";
 
 export default function Header() {
+  const images = [
+    "/header.jpg",
+    "/header2.jpg",
+    "/header3.jpg",
+    "/header4.jpg",
+    "/header5.jpg",
+  ];
+  const intervalTime = 6000;
+
   return (
     <header
       className="w-full flex justify-around items-center p-4 relative"
       style={{ width: "100%", height: "200px" }}>
-      <Image
-        src={headerImage}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        alt="background header showing dried flowers"
+      <BackgroundImageRotator
+        images={images}
+        intervalTime={intervalTime}
         className="opacity-50"
       />
 
