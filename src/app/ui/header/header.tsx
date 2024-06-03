@@ -13,14 +13,15 @@ export default function Header() {
         objectFit="cover"
         objectPosition="center"
         alt="background header showing dried flowers"
+        className="opacity-50"
       />
 
-      <div className="absolute top-0 left-0 p-4">
-        <h1 className="text-xl font-bold">Stéphanie HEUDRE</h1>
+      <div className="left-0 right-10 absolute p-4 flex-col items-center">
+        <h1 className="text-2xl font-bold">Stéphanie HEUDRE</h1>
         <h2>Spécialiste du massage diplômé</h2>
       </div>
 
-      <div className="absolute top-0 right-0 p-4 flex items-center gap-2">
+      <div className="right-10 absolute p-4 flex items-center gap-2">
         <a
           href="https://www.facebook.com/profile.php?id=100001999839594&locale=fr_FR"
           target="_blank"
