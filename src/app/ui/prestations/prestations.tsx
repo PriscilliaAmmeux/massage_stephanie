@@ -7,26 +7,30 @@ import { BsInfoSquare } from "react-icons/bs";
 export default function Prestations() {
   return (
     <section className="rounded-lg">
-      <Title title="Prestations" Icon={RiServiceLine} />
+      <div className="flex justify-center">
+        <Title title="Prestations" Icon={RiServiceLine} />
+      </div>
+
       <div className="grid grid-cols-3 gap-4">
         {prestations.map((prestation) => (
           <Card key={prestation.id} {...prestation} />
         ))}
       </div>
 
-      <div className="mt-10 flex justify-center grid grid-cols-12 items-start w-full max-w-4xl bg-gray-100 p-6 rounded-lg shadow-lg">
-        <div className="col-span-1 flex justify-center items-start">
-          <BsInfoSquare size="2em" className="mr-2 text-green-700" />
+      <div className="mt-10 flex justify-center">
+        <div className="w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg flex flex-col space-y-4">
+          <div className="flex justify-center">
+            <Title title="Zone d'intervention : " Icon={BsInfoSquare} />
+          </div>
+          <p className="italic">
+            Quesnoy-sur-Deûle, Comines, Linselles, Wambrechies, Verlinghem,
+            Pérenchies, Bondues, Deûlémont, Frelinghein, Wervicq-Sud,
+            Bousbecque, Lambersart, Saint-André, Marquette-lez-Lille.
+          </p>
+          <p className="text-gray-700">
+            Déplacement possible en dehors de ces villes sur demande.
+          </p>
         </div>
-        <p className="col-span-8 mb-2 italic list-disc pl-6">
-          *<span className="underline"> Zone d'intervention</span>:
-          Quesnoy-sur-Deûle, Comines, Linselles, Wambrechies, Verlinghem,
-          Pérenchies, Bondues, Deûlémont, Frelinghein, Wervicq-Sud, Bousbecque,
-          Lambersart, Saint-André, Marquette-lez-Lille.
-        </p>
-        <p className="col-span-3 text-gray-700">
-          * Déplacement possible en dehors de ces villes sur demande.
-        </p>
       </div>
     </section>
   );

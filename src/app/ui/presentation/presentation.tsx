@@ -15,7 +15,6 @@ export default function Presentation() {
       />
 
       <div>
-        <h1 className="text-3xl font-bold mb-4"></h1>
         <Title title="Présentation" Icon={CgProfile} />
         <p className="text-lg leading-relaxed">
           <span className="font-bold">
