@@ -1,20 +1,21 @@
 import Image from "next/image";
 import imageProfil from "../../../../public/profil.jpg";
+import Title from "../../components/title/title";
+import { CgProfile } from "react-icons/cg";
 
 export default function Presentation() {
   return (
     <div className="max-w-6xl mx-auto p-5 flex items-center font-sans text-gray-800">
-      <div className="flex-shrink-0 mr-10">
-        <Image
-          src={imageProfil}
-          alt="photo profil"
-          className="rounded-full"
-          width={200}
-          height={200}
-        />
-      </div>
+      <Image
+        src={imageProfil}
+        alt="photo profil"
+        className="rounded-full flex-shrink-0 mr-10"
+        width={200}
+        height={200}
+      />
+
       <div>
-        <h1 className="text-3xl font-bold mb-4">Présentation</h1>
+        <Title title="Présentation" Icon={CgProfile} />
         <p className="text-lg leading-relaxed">
           <span className="font-bold">
             Infirmière de formation et attachée de recherche clinique
