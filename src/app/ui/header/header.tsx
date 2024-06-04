@@ -1,5 +1,6 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import BackgroundImageRotator from "@/app/components/backgroundImageRotator/backgroundImageRotator";
+import Items from "@/app/components/items/items";
 
 export default function Header() {
   const images = [
@@ -25,6 +26,8 @@ export default function Header() {
         <h1 className="text-2xl font-bold">Stéphanie HEUDRE</h1>
         <h2>Spécialiste du massage diplômé</h2>
       </div>
+
+      <Items />
 
       <div className="right-10 absolute p-4 flex items-center gap-2">
         <a
