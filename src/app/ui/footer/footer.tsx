@@ -12,7 +12,7 @@ export default function Footer() {
 
       <p className="flex items-center justify-center h-40 pt-5 italic text-white bg-gray-600 gap-2">
         Créée par Priscillia Ammeux <GiLadybug /> - Conceptrice et Développeuse
-        d'Applications:
+        d&apos;Applications:
         <a
           href="http://www.priscillia-ammeux-portfolio.fr"
           className="hover:text-pink-500"
