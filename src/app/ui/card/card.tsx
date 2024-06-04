@@ -35,13 +35,11 @@ export default function Card({
             </p>
           ))
         )}
-        <div className="absolute bottom-0 flex justify-between center mb-4">
+        <div className="absolute bottom-0 flex justify-center mb-4 gap-60">
           <p className="text-gray-700 text-base font-bold">
             Durée : {duration}
           </p>
-          <p className="text-gray-700 text-base font-bold ml-20">
-            Tarif: {price} €
-          </p>
+          <p className="text-gray-700 text-base font-bold ">Tarif: {price} €</p>
         </div>
       </div>
     </div>
