@@ -19,9 +19,9 @@ export default function Qvt() {
           <span className="font-bold">
             CQVT signifie &quot;Conditions de Qualité de Vie au Travail&quot;.
           </span>{" "}
-          C'est un aspect important de votre entreprise car le bien-être de vos
-          employés est essentiel pour leur productivité et leur satisfaction au
-          travail.
+          C&apos;est un aspect important de votre entreprise car le bien-être de
+          vos employés est essentiel pour leur productivité et leur satisfaction
+          au travail.
         </p>
       </div>
     </section>
