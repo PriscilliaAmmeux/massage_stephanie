@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/app/components/button/button";
+import Button from "@/app/ui/button/button";
 import Title from "@/app/components/title/title";
 import { useState } from "react";
 import { CiMail } from "react-icons/ci";
@@ -28,7 +28,9 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit} className="flex-1 flex flex-col">
-      <Title title="Contactez-moi" Icon={CiMail} />
+      <div className="flex justify-center items-center">
+        <Title title="Contactez-moi" Icon={CiMail} />
+      </div>
       <input
         type="text"
         name="name"
