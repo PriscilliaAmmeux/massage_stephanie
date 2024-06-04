@@ -11,7 +11,7 @@ export default function Prestations() {
         <Title title="Prestations" Icon={RiServiceLine} />
       </div>
 
-      <div className="grid grid-cols-3 gap-4 pl-4 pr-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pl-4 pr-4">
         {prestations.map((prestation) => (
           <Card key={prestation.id} {...prestation} />
         ))}

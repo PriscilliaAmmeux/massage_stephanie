@@ -5,11 +5,11 @@ import { CgProfile } from "react-icons/cg";
 
 export default function Presentation() {
   return (
-    <section className="max-w-6xl p-5 flex items-center font-sans text-gray-800 mt-10 mb-10">
+    <section className="max-w-6xl p-5 flex flex-col md:flex-row items-center font-sans text-gray-800 mt-10 mb-10">
       <Image
         src={imageProfil}
         alt="photo profil"
-        className="rounded-full flex-shrink-0 mr-10"
+        className="rounded-full flex-shrink-0 mr-10 mb-10 md:mb-0"
         width={200}
         height={200}
       />
