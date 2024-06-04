@@ -6,12 +6,12 @@ import { BsInfoSquare } from "react-icons/bs";
 
 export default function Prestations() {
   return (
-    <section className="rounded-lg">
+    <section className=" pt-6 pb-6 ">
       <div className="flex justify-center">
         <Title title="Prestations" Icon={RiServiceLine} />
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 pl-4 pr-4">
         {prestations.map((prestation) => (
           <Card key={prestation.id} {...prestation} />
         ))}
