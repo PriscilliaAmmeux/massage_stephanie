@@ -19,6 +19,7 @@ export default function Home() {
         <Presentation />
         <Prestations />
       </section>
+      <p>Section QVT</p>
 
       <Footer />
     </main>
