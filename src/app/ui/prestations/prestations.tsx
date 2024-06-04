@@ -1,4 +1,4 @@
-import Card from "@/app/components/card/card";
+import Card from "@/app/ui/card/card";
 import prestations from "../../../../api/prestations.json";
 import { RiServiceLine } from "react-icons/ri";
 import Title from "@/app/components/title/title";
