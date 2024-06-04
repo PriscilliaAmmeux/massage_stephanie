@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header
       className="w-full flex justify-around items-center p-4 relative"
-      style={{ width: "100%", height: "200px" }}>
+      style={{ width: "100%", height: "300px" }}>
       <BackgroundImageRotator
         images={images}
         intervalTime={intervalTime}

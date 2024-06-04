@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 
 export default function Presentation() {
   return (
-    <section className="max-w-6xl mx-auto p-5 flex items-center font-sans text-gray-800">
+    <section className="max-w-6xl p-5 flex items-center font-sans text-gray-800 mt-10 mb-10">
       <Image
         src={imageProfil}
         alt="photo profil"

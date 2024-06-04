@@ -5,7 +5,7 @@ import cqvt from "../../../../public/cqvt.jpg";
 
 export default function Qvt() {
   return (
-    <section className="mt-10 max-w-6xl mx-auto p-10 flex items-center font-sans text-gray-800">
+    <section className="mt-1 mb-10 max-w-6xl mx-auto p-10 flex items-center font-sans text-gray-800">
       <Image
         src={cqvt}
         alt="photo profil"

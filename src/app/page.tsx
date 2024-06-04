@@ -16,8 +16,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
-      <section className="w-full flex flex-col items-center justify-center gap-10">
-        <Presentation />
+      <section className="w-full flex flex-col items-center justify-center">
+        <div className="w-full bg-gray-100 flex items-center justify-center">
+          <Presentation />
+        </div>
         <div
           className="bg-cover"
           style={{ backgroundImage: `url(${backgroundImage.src})` }}>

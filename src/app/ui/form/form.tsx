@@ -28,7 +28,7 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit} className="flex-1 flex flex-col">
-      <Title title="Contactez-nous" Icon={CiMail} />
+      <Title title="Contactez-moi" Icon={CiMail} />
       <input
         type="text"
         name="name"
