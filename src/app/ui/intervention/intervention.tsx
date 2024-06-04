@@ -3,8 +3,8 @@ import { BsInfoSquare } from "react-icons/bs";
 
 export default function Intervention() {
   return (
-    <section className="mt-10 flex justify-center">
-      <div className="w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg flex flex-col space-y-4">
+    <section className="mt-10 flex justify-center px-4 md:px-6 lg:px-8">
+      <div className="w-full max-w-2xl bg-gray-200 p-6 md:p-8 lg:p-10 rounded-lg shadow-lg flex flex-col space-y-4">
         <div className="flex justify-center">
           <Title title="Zone d'intervention : " Icon={BsInfoSquare} />
         </div>
