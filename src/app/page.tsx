@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Header from "./ui/header/header";
 import Presentation from "./ui/presentation/presentation";
 import Prestations from "./ui/prestations/prestations";
+import Footer from "./ui/footer/footer";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -18,24 +19,9 @@ export default function Home() {
         <Presentation />
         <Prestations />
       </section>
+      <p>Section QVT</p>
 
-      <footer className="w-full flex justify-between items-center p-4 bg-gray-200">
-        <div>
-          <h3>Contactez-nous</h3>
-          <form>
-            <input type="text" placeholder="Votre nom" />
-            <input type="email" placeholder="Votre email" />
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
-          </form>
-        </div>
-        <div>
-          <h3>Infos de contact</h3>
-          <p>Adresse</p>
-          <p>Téléphone</p>
-          <p>Email</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
