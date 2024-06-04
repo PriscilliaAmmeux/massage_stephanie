@@ -4,23 +4,30 @@ import InfoContact from "../infoContact/infoContact";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-pink-100">
-      <div className=" flex justify-between gap-40 p-10">
+    <footer className="w-full bg-pink-100 p-10">
+      <div className=" flex justify-between gap-40 ">
         <Form />
         <InfoContact />
       </div>
 
-      <p className="flex items-center justify-center h-40 pt-5 italic text-white bg-gray-600 gap-2">
-        Créée par Priscillia Ammeux <GiLadybug /> - Conceptrice et Développeuse
-        d&apos;Applications:
-        <a
-          href="http://www.priscillia-ammeux-portfolio.fr"
-          className="hover:text-pink-500"
-          target="_blank"
-          rel="noopener noreferrer">
-          www.priscillia-ammeux-portfolio.fr
-        </a>
-      </p>
+      <div className="flex flex-col items-center justify-center pt-10 gap-2">
+        <hr className="w-full border-t-2 border-pink-500 mb-5" />
+        <p className="italic flex gap-2 items-center">
+          Créée par{" "}
+          <span className="font-bold text-pink-500">Priscillia Ammeux</span>{" "}
+          <GiLadybug className="text-pink-500" />
+        </p>
+        <p className="italic">
+          Conceptrice et Développeuse d&apos;Applications:{" "}
+          <a
+            href="http://www.priscillia-ammeux-portfolio.fr"
+            className="text-pink-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer">
+            www.priscillia-ammeux-portfolio.fr
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }

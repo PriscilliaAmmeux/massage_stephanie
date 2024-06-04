@@ -6,7 +6,7 @@ import { BsInfoSquare } from "react-icons/bs";
 
 export default function Prestations() {
   return (
-    <section className=" pt-6 pb-6 ">
+    <section className=" pt-10 ">
       <div className="flex justify-center">
         <Title title="Prestations" Icon={RiServiceLine} />
       </div>
