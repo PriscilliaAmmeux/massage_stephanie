@@ -17,7 +17,7 @@ export default function Qvt() {
         <Title title="CQVT" Icon={MdOutlineWork} />
         <p className="text-lg leading-relaxed">
           <span className="font-bold">
-            CQVT signifie "Conditions de Qualité de Vie au Travail".
+            CQVT signifie &quot;Conditions de Qualité de Vie au Travail&quot;.
           </span>{" "}
           C'est un aspect important de votre entreprise car le bien-être de vos
           employés est essentiel pour leur productivité et leur satisfaction au
