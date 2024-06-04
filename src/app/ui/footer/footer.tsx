@@ -4,7 +4,7 @@ import InfoContact from "../infoContact/infoContact";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-pink-100 mt-10">
+    <footer className="w-full bg-pink-100">
       <div className=" flex justify-between gap-40 p-10">
         <Form />
         <InfoContact />

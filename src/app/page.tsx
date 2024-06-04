@@ -3,6 +3,8 @@ import Header from "./ui/header/header";
 import Presentation from "./ui/presentation/presentation";
 import Prestations from "./ui/prestations/prestations";
 import Footer from "./ui/footer/footer";
+import Qvt from "./ui/qvt/qvt";
+import backgroundImage from "../../public/feather2.jpg";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -14,12 +16,15 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
-
-      <section className="w-full flex flex-col items-center justify-center p-4">
+      <section className="w-full flex flex-col items-center justify-center gap-10">
         <Presentation />
-        <Prestations />
+        <div
+          className="bg-cover"
+          style={{ backgroundImage: `url(${backgroundImage.src})` }}>
+          <Prestations />
+          <Qvt />
+        </div>
       </section>
-      <p>Section QVT</p>
 
       <Footer />
     </main>
