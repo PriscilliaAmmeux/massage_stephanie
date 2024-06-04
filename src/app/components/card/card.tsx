@@ -16,7 +16,7 @@ export default function Card({
   price,
 }: CardProps) {
   return (
-    <div className="relative bg-green-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
+    <div className="relative bg-pink-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
       <div className="flex items-center justify-center">
         <img
           className="w-60 h-60 object-cover rounded-lg mt-5"
