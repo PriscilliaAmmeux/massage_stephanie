@@ -21,7 +21,7 @@ export default function Card({
         <img
           className="w-60 h-60 md:w-48 md:h-48 object-cover rounded-lg mt-5"
           src={image}
-          alt={title}
+          alt={`Une image représentant ${title}`}
         />
       </div>
       <div className="px-6 py-4 mb-20">

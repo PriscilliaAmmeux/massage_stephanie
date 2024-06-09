@@ -3,8 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
+type Image = {
+  src: string;
+  alt: string;
+};
+
 interface BackgroundImageRotatorProps {
-  images: string[];
+  images: Image[];
   intervalTime: number;
   className?: string;
 }
@@ -28,11 +33,11 @@ export default function BackgroundImageRotator({
 
   return (
     <Image
-      src={currentImage}
+      src={currentImage.src}
       layout="fill"
       objectFit="cover"
       objectPosition="center"
-      alt="background header"
+      alt={currentImage.alt}
       className={className}
     />
   );
