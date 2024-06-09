@@ -8,7 +8,7 @@ export default function Qvt() {
     <section className="mt-1 mb-10 max-w-6xl mx-auto p-4 sm:p-6 md:p-10 flex flex-col md:flex-row items-center font-sans text-gray-800">
       <Image
         src={cqvt}
-        alt="photo profil"
+        alt="photo représentant un salarié se faisant masser au travail dans le cadre de la QVT (qualité de vie au travail)"
         className="rounded-lg flex-shrink-0 mb-4 md:mb-0 md:mr-10"
         width={400}
         height={400}
