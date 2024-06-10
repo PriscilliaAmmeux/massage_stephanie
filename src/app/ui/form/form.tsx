@@ -5,13 +5,15 @@ import Title from "@/app/components/title/title";
 import { useRef } from "react";
 import { CiMail } from "react-icons/ci";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import Style from "./form.module.css";
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
     const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
     const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
@@ -26,9 +28,19 @@ export default function Form() {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
         console.log(result.text);
+        Swal.fire({
+          title: "Succès!",
+          text: "Votre message a bien été envoyé.",
+          icon: "success",
+        });
       },
       (error) => {
         console.log(error.text);
+        Swal.fire({
+          title: "Erreur!",
+          text: "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+          icon: "error",
+        });
       }
     );
     (e.target as HTMLFormElement).reset();
