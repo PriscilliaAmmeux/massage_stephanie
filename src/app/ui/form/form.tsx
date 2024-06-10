@@ -2,48 +2,50 @@
 
 import Button from "@/app/ui/button/button";
 import Title from "@/app/components/title/title";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { CiMail } from "react-icons/ci";
+import emailjs from "@emailjs/browser";
 
 export default function Form() {
-  /*const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const form = useRef<HTMLFormElement>(null);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { type, name, value } = e.target;
-    setFormData((prev) => {
-      return { ...prev, [name]: value };
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
-  };*/
+    
+    const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      throw new Error("Environment variables are not defined");
+    }
 
-  const form = useRef();
+    if (!form.current) {
+      throw new Error("Form is not rendered yet");
+    }
 
-  const sendEmail = () => {};
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    (e.target as HTMLFormElement).reset();
+  };
 
   return (
     <form ref={form} onSubmit={sendEmail} className="flex-1 flex flex-col">
       <div className="flex justify-center items-center">
-        <Title title="Contactez-moi" Icon={CiMail} />
+        <Title title="Formulaire de contact" Icon={CiMail} />
       </div>
       <label htmlFor="name" className="sr-only">
         Votre nom
       </label>
       <input
         type="text"
-        name="name"
+        name="user_name"
         placeholder="Votre nom"
-        value={formData.name}
-        onChange={handleChange}
         required
         aria-required="true"
         className="mb-4 p-2 border border-gray-300 rounded"
@@ -53,10 +55,8 @@ export default function Form() {
       </label>
       <input
         type="email"
-        name="email"
+        name="user_email"
         placeholder="Votre email"
-        value={formData.email}
-        onChange={handleChange}
         required
         aria-required="true"
         className="mb-4 p-2 border border-gray-300 rounded"
@@ -67,8 +67,6 @@ export default function Form() {
       <textarea
         name="message"
         placeholder="Votre message"
-        value={formData.message}
-        onChange={handleChange}
         required
         aria-required="true"
         className="mb-4 p-2 border border-gray-300 rounded h-32"
