@@ -2,11 +2,11 @@
 
 import Button from "@/app/ui/button/button";
 import Title from "@/app/components/title/title";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { CiMail } from "react-icons/ci";
 
 export default function Form() {
-  const [formData, setFormData] = useState({
+  /*const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
@@ -24,10 +24,14 @@ export default function Form() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
-  };
+  };*/
+
+  const form = useRef();
+
+  const sendEmail = () => {};
 
   return (
-    <form onSubmit={handleSubmit} className="flex-1 flex flex-col">
+    <form ref={form} onSubmit={sendEmail} className="flex-1 flex flex-col">
       <div className="flex justify-center items-center">
         <Title title="Contactez-moi" Icon={CiMail} />
       </div>
@@ -58,7 +62,7 @@ export default function Form() {
         className="mb-4 p-2 border border-gray-300 rounded"
       />
       <label htmlFor="message" className="sr-only">
-        Votre message
+        Tapez ici votre message
       </label>
       <textarea
         name="message"
