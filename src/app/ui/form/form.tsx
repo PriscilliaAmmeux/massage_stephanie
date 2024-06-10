@@ -15,9 +15,9 @@ export default function Form() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+    const { type, name, value } = e.target;
+    setFormData((prev) => {
+      return { ...prev, [name]: value };
     });
   };
 
