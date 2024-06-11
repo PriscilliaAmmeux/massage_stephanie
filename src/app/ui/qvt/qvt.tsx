@@ -1,7 +1,7 @@
 import Title from "@/app/components/title/title";
 import { MdOutlineWork } from "react-icons/md";
 import Image from "next/image";
-import cqvt from "../../../../public/cqvt.jpg";
+import cqvt from "../../../../public/cqvt.webp";
 
 export default function Qvt() {
   return (
