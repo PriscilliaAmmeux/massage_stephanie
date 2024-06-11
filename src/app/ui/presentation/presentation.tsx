@@ -1,6 +1,6 @@
 import Image from "next/image";
 import imageProfil from "../../../../public/profil.webp";
-import Title from "../../components/title/title";
+import Title from "../title/title";
 import { CgProfile } from "react-icons/cg";
 
 export default function Presentation() {

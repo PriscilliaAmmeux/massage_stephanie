@@ -1,7 +1,7 @@
 import Card from "@/app/ui/card/card";
 import prestations from "../../../../api/prestations.json";
 import { RiServiceLine } from "react-icons/ri";
-import Title from "@/app/components/title/title";
+import Title from "@/app/ui/title/title";
 import Intervention from "../intervention/intervention";
 
 export default function Prestations() {

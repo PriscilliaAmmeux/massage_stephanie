@@ -1,4 +1,4 @@
-import Title from "@/app/components/title/title";
+import Title from "@/app/ui/title/title";
 import { MdOutlineWork } from "react-icons/md";
 import Image from "next/image";
 import cqvt from "../../../../public/cqvt.webp";
