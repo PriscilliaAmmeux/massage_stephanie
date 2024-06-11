@@ -13,31 +13,15 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
-  const [isFormValid, setIsFormValid] = useState(false);
-
-  useEffect(() => {
-    setIsFormValid(
-      name !== "" && phone !== "" && email !== "" && message !== ""
-    );
-  }, [name, phone, email, message]);
 
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const isFormValid =
-      name !== "" && phone !== "" && email !== "" && message !== "";
-
-    if (!isFormValid) {
-      console.log(false);
-      Swal.fire({
-        title: "Erreur!",
-        text: "Veuillez remplir tous les champs",
-        icon: "error",
-      });
-      return;
+    if (form.current && !form.current.checkValidity()) {
+      return alert("Veuillez remplir tous les champs du formulaire."), false;
     }
+
+    e.preventDefault();
 
     if (honeypot !== "") {
       alert("Vous êtes un robot");
@@ -131,7 +115,7 @@ export default function Form() {
       <input
         type="tel"
         name="user_phone"
-        placeholder="Votre téléphone"
+        placeholder="Votre numéro de téléphone"
         required
         aria-required="true"
         className="mb-4 p-2 border border-gray-300 rounded"
@@ -151,6 +135,7 @@ export default function Form() {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
+
       <input
         type="text"
         name="honeypot"
@@ -159,11 +144,7 @@ export default function Form() {
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
-      <Button
-        type="submit"
-        text="Envoyer mon message"
-        disabled={!isFormValid}
-      />
+      <Button type="submit" text="Envoyer mon message" />
     </form>
   );
 }
