@@ -11,7 +11,7 @@ export default function InfoContact() {
       <Title title="Informations de contact" Icon={RiContactsBook3Line} />
       <InfoItemContact Icon={FaCity}>Quesnoy-Sur-Deûle</InfoItemContact>
       <InfoItemContact Icon={FiPhone}>+ 33 6 76 39 74 06</InfoItemContact>
-      <div className="cursor hover:text-pink-500">
+      <div className="cursor hover:text-pink-700">
         <InfoItemContact Icon={AiOutlineMail}>
           <a href="mailto:heudre.stephanie@gmail.com">
             heudre.stephanie@gmail.com
