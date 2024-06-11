@@ -17,11 +17,11 @@ export default function Form() {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
     if (form.current && !form.current.checkValidity()) {
       return alert("Veuillez remplir tous les champs du formulaire."), false;
     }
-
-    e.preventDefault();
 
     if (honeypot !== "") {
       alert("Vous êtes un robot");
