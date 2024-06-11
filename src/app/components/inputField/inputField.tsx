@@ -22,8 +22,7 @@ const InputField: React.FC<InputFieldProps> = ({
     name={name}
     placeholder={placeholder}
     required={isRequired}
-    aria-required="true"
-    className="mb-4 p-2 border border-gray-300 rounded"
+    
     value={value}
     onChange={onChange}
     style={style}

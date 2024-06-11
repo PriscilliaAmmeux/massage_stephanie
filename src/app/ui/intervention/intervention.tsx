@@ -1,4 +1,4 @@
-import Title from "@/app/components/title/title";
+import Title from "@/app/ui/title/title";
 import { BsInfoSquare } from "react-icons/bs";
 
 export default function Intervention() {

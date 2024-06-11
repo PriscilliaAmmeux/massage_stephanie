@@ -1,4 +1,4 @@
-import Title from "@/app/components/title/title";
+import Title from "@/app/ui/title/title";
 import { RiContactsBook3Line } from "react-icons/ri";
 import { FaCity } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
