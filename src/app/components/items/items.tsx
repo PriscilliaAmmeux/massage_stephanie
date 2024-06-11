@@ -8,7 +8,7 @@ export default function Items() {
       {items.map((item, index) => (
         <React.Fragment key={index}>
           <div className="text-lg italic font-semibold">{item}</div>
-          {index < items.length - 1 && <div className="text-pink-500">•</div>}
+          {index < items.length - 1 && <div className="text-pink-700">•</div>}
         </React.Fragment>
       ))}
     </div>

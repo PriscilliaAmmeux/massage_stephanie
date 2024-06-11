@@ -8,8 +8,8 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ title, Icon }) => (
   <div className="flex items-center mb-4">
-    <Icon className="text-pink-500 text-2xl mr-2" />
-    <h1 className="text-2xl text-pink-500 font-bold">{title}</h1>
+    <Icon className="text-pink-700 text-2xl mr-2" />
+    <h1 className="text-2xl text-pink-700 font-bold">{title}</h1>
   </div>
 );
 
