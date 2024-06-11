@@ -34,6 +34,14 @@ export default function Form() {
       return;
     }
 
+    const regex = /^(06|07)\d{8}$/;
+    if (!regex.test(phone)) {
+      alert(
+        "Veuillez entrer un numéro de téléphone valide exemple 06 XX XX XX XX."
+      );
+      return;
+    }
+
     const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
     const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
     const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
@@ -66,10 +74,16 @@ export default function Form() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex-1 flex flex-col">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="flex-1 flex flex-col bg-white rounded-md p-6">
       <div className="flex justify-center items-center">
         <Title title="Formulaire de contact" Icon={CiMail} />
       </div>
+      <label htmlFor="name" className="sr-only">
+        Votre nom
+      </label>
       <InputField
         type="text"
         name="user_name"
@@ -77,13 +91,19 @@ export default function Form() {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
+      <label htmlFor="email" className="sr-only">
+        Votre email par exemple: email@exemple.com
+      </label>
       <InputField
         type="email"
         name="user_email"
-        placeholder="Votre email"
+        placeholder="mon-mail@exemple.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
+      <label htmlFor="phone" className="sr-only">
+        Votre téléphone par exemple: 06 12 34 56 78
+      </label>
       <InputField
         type="tel"
         name="user_phone"
@@ -91,6 +111,9 @@ export default function Form() {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
+      <label htmlFor="message" className="sr-only">
+        Votre message
+      </label>
       <TextAreaField
         name="message"
         placeholder="Votre message"

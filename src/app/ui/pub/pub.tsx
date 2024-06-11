@@ -5,7 +5,7 @@ export default function Pub() {
     <section className="flex flex-col items-center justify-center pt-10 px-4 gap-2 text-center md:text-left text-sm">
       <hr className="w-full border-t-2 border-pink-500 mb-5" />
       <p className="italic flex flex-col md:flex-row gap-2 items-center">
-        Créée par{" "}
+        Créé par{" "}
         <span className="font-bold text-pink-500">Priscillia Ammeux</span>{" "}
         <GiLadybug className="text-pink-500" />
       </p>
