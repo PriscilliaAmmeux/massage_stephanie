@@ -1,7 +1,6 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import BackgroundImageRotator from "@/app/components/backgroundImageRotator/backgroundImageRotator";
-import Items from "@/app/components/items/items";
-import { AiOutlineMail } from "react-icons/ai";
+import NavBar from "../navBar/navBar";
 
 export default function Header() {
   const images = [
@@ -35,28 +34,14 @@ export default function Header() {
         className="opacity-50"
       />
 
-      <div className="left-0 right-10 absolute p-4 flex-col items-center">
-        <h1 className="text-2xl font-bold">Stéphanie HEUDRE</h1>
-        <h2>Spécialiste du massage diplômé</h2>
-      </div>
-
-      <Items />
-
-      <div className="right-10 absolute p-4 flex items-center gap-2">
-        <a
-          href="https://www.facebook.com/profile.php?id=100001999839594&locale=fr_FR"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to Facebook profile">
-          <FaFacebook size={24} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/st%C3%A9phanieheudre/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to LinkedIn profile">
-          <FaLinkedin size={24} />
-        </a>
+      <div className="absolute flex flex-col items-center justify-center w-full h-full">
+        <h1 className="text-4xl font-bold">Stéphanie HEUDRE</h1>
+        <h2 className="text-3xl">Infirmière diplômé d'état</h2>
+        <p className="pt-10">
+          Je propose des services de massage professionnel à domicile ainsi que
+          sur le lieu de travail, dans le cadre d'initiatives de qualité de vie
+          au travail (QVT).
+        </p>
       </div>
     </header>
   );
