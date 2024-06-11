@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/amma.jpg",
+    "image": "/amma.webp",
     "title": "Massage Assis ou AMMA",
     "text": [
       {
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "/chei.jpg",
+    "image": "/chei.webp",
     "title": "Chi Nei Tsang",
     "text": [
       {
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "/cranien.jpg",
+    "image": "/cranien.webp",
     "title": "Réfléxologie crânienne",
     "text": [
       {
