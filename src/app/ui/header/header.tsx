@@ -6,20 +6,20 @@ import { AiOutlineMail } from "react-icons/ai";
 export default function Header() {
   const images = [
     {
-      src: "/header.jpg",
+      src: "/header.webp",
       alt: "Fond d'écran représentant des fleurs séchés dans un pot en verre ainsi qu'un récipient contenant de l'huile",
     },
     {
-      src: "/header2.jpg",
+      src: "/header2.webp",
       alt: "Fond d'écran représentant des bougies, des fleurs séchés.",
     },
     {
-      src: "/header3.jpg",
+      src: "/header3.webp",
       alt: "Fond d'écran représentant une page, avec une pile de galets superposés les un aux autres au 1er plan, plage de sable fin au second plan, la mer et un ciel bleu.",
     },
-    { src: "/header4.jpg", alt: "Fond d'écran représentant des fleurs roses" },
+    { src: "/header4.webp", alt: "Fond d'écran représentant des fleurs roses" },
     {
-      src: "/header5.jpg",
+      src: "/header5.webp",
       alt: "Fond d'écran représentant des fleurs blanches et orange sur un fond vert.",
     },
   ];
