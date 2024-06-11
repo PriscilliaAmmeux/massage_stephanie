@@ -1,9 +1,6 @@
 import Header from "./ui/header/header";
 import Presentation from "./ui/presentation/presentation";
-import Prestations from "./ui/prestations/prestations";
 import Footer from "./ui/footer/footer";
-import Qvt from "./ui/qvt/qvt";
-import backgroundImage from "../../public/feather2.webp";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -21,12 +18,6 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center">
         <div className="w-full bg-gray-100 flex items-center justify-center">
           <Presentation />
-        </div>
-        <div
-          className="bg-cover"
-          style={{ backgroundImage: `url(${backgroundImage.src})` }}>
-          <Prestations />
-          <Qvt />
         </div>
       </section>
       <Analytics />

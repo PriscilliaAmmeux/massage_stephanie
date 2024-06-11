@@ -1,19 +1,23 @@
-import Form from "../form/form";
-import InfoContact from "../infoContact/infoContact";
-import Pub from "../pub/pub";
+import { GiLadybug } from "react-icons/gi";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-pink-100 p-4 sm:p-6 md:p-10">
-      <div className="flex flex-col md:flex-row justify-around items-center md:items-start space-y-6 md:space-y-0">
-        <div className="w-full md:w-2/4">
-          <Form />
-        </div>
-        <div className="w-full md:w-1/4">
-          <InfoContact />
-        </div>
-      </div>
-      <Pub />
+    <footer className="w-full bg-pink-100  sm:p-6 md:p-10 flex flex-col items-center justify-center pt-10 px-4 gap-2 text-center md:text-left text-sm">
+      <p className="italic flex flex-col md:flex-row gap-2 items-center">
+        Créé par{" "}
+        <span className="font-bold text-pink-700">Priscillia Ammeux</span>{" "}
+        <GiLadybug className="text-pink-700" />
+      </p>
+      <p className="italic">
+        Conceptrice et Développeuse d&apos;Applications:{" "}
+        <a
+          href="http://www.priscillia-ammeux-portfolio.fr"
+          className="text-pink-700 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer">
+          www.priscillia-ammeux-portfolio.fr
+        </a>
+      </p>
     </footer>
   );
 }
