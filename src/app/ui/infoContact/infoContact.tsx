@@ -11,11 +11,13 @@ export default function InfoContact() {
       <Title title="Informations de contact" Icon={RiContactsBook3Line} />
       <InfoItemContact Icon={FaCity}>Quesnoy-Sur-Deûle</InfoItemContact>
       <InfoItemContact Icon={FiPhone}>+ 33 6 76 39 74 06</InfoItemContact>
-      <InfoItemContact Icon={AiOutlineMail} className="hover:text-pink-500">
-        <a href="mailto:heudre.stephanie@gmail.com">
-          heudre.stephanie@gmail.com
-        </a>
-      </InfoItemContact>
+      <div className="cursor hover:text-pink-500">
+        <InfoItemContact Icon={AiOutlineMail}>
+          <a href="mailto:heudre.stephanie@gmail.com">
+            heudre.stephanie@gmail.com
+          </a>
+        </InfoItemContact>
+      </div>
     </section>
   );
 }
