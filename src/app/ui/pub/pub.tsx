@@ -2,7 +2,7 @@ import { GiLadybug } from "react-icons/gi";
 
 export default function Pub() {
   return (
-    <div className="flex flex-col items-center justify-center pt-10 px-4 gap-2 text-center md:text-left">
+    <section className="flex flex-col items-center justify-center pt-10 px-4 gap-2 text-center md:text-left text-sm">
       <hr className="w-full border-t-2 border-pink-500 mb-5" />
       <p className="italic flex flex-col md:flex-row gap-2 items-center">
         Créée par{" "}
@@ -19,6 +19,6 @@ export default function Pub() {
           www.priscillia-ammeux-portfolio.fr
         </a>
       </p>
-    </div>
+    </section>
   );
 }
