@@ -2,7 +2,7 @@ import { GiLadybug } from "react-icons/gi";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-pink-100  sm:p-6 md:p-10 flex flex-col items-center justify-center pt-10 px-4 gap-2 text-center md:text-left text-sm">
+    <footer className="w-full bg-pink-100  sm:p-6 md:p-10 flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm">
       <p className="italic flex flex-col md:flex-row gap-2 items-center">
         Créé par{" "}
         <span className="font-bold text-pink-700">Priscillia Ammeux</span>
