@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import styles from "../../styles/burger.module.css";
 import { useState } from "react";
-import NavLink from "@/app/components/navLink/navLink";
+import NavLink from "@/app/ui/navLink/navLink";
 
 export default function Burger() {
   const [isOpen, setIsOpen] = useState(false);
