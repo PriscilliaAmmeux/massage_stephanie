@@ -1,8 +1,10 @@
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import BackgroundImageRotator from "@/app/components/backgroundImageRotator/backgroundImageRotator";
-import NavBar from "../navBar/navBar";
 
-export default function Header() {
+interface HeaderProps {
+  className?: string;
+}
+
+export default function Header({ className }: HeaderProps) {
   const images = [
     {
       src: "/header.webp",
@@ -26,7 +28,7 @@ export default function Header() {
 
   return (
     <header
-      className="w-full flex flex-col md:flex-row justify-around items-center p-4 relative"
+      className={`w-full flex flex-col md:flex-row justify-around items-center p-4 relative ${className}`}
       style={{ width: "100%", height: "300px" }}>
       <BackgroundImageRotator
         images={images}

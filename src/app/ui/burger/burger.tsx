@@ -14,16 +14,21 @@ export default function Burger() {
   };
   return (
     <section>
-      <div className="flex justify-end items-center">
+      <div className="flex justify-between items-center pt-4 pb-4">
+        <h1 className="text-2xl font-bold uppercase pl-2">Stéphanie HEUDRE</h1>
         <button className="lg:hidden" onClick={toggleMenu}>
           {isOpen ? <FaTimes className="mr-6" /> : <FaBars className="mr-6" />}
         </button>
       </div>
 
       <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
-        <NavLink href="/" title="Accueil" />
-        <NavLink href="/prestations" title="Prestations" />
-        <NavLink href="/contact" title="Contact" />
+        <NavLink className="text-white pb-2" href="/" title="Accueil" />
+        <NavLink
+          className="text-white pb-2"
+          href="/prestations"
+          title="Prestations"
+        />
+        <NavLink className="text-white" href="/contact" title="Contact" />
       </div>
     </section>
   );
