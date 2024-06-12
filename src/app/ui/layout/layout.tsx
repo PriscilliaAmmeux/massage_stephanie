@@ -10,7 +10,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <section>
-      <Header />
+      <Header className="hidden sm:block" />
       <Navigation />
       {children}
       <Footer />
