@@ -19,11 +19,12 @@ export default function Presentation() {
         <Title title="Présentation" Icon={CgProfile} />
         <p className="text-lg leading-relaxed">
           <span className="font-bold">
-            Infirmière de formation et attachée de recherche clinique
+            Infirmière de formation (diplômée d&apos;état) et attachée de
+            recherche clinique
           </span>
-          , j’ai progressivement ajouté à la prise en soins les massages
+          , j&apos;ai progressivement ajouté à la prise en soins les massages
           <span className="font-bold"> bien-être </span> persuadée de
-          l’importance de l’impact de ces moments de détente.
+          l&apos;importance de l&apos;impact de ces moments de détente.
         </p>
         <p className="text-lg leading-relaxed">
           Après plusieurs formations en
@@ -32,14 +33,14 @@ export default function Presentation() {
           au <span className="font-bold"> massage assis</span>.
         </p>
         <p className="text-lg leading-relaxed">
-          J’ai eu l’opportunité de pratiquer en club vacances, diversifiant mon
-          activité.
+          J&apos;ai eu l&apos;opportunité de pratiquer en club vacances,
+          diversifiant mon activité.
         </p>
         <p className="text-lg leading-relaxed">
           Je suis ensuite intervenue en entreprise auprès des employés dans le
           cadre des journées <span className="font-bold">QVT</span> (Qualité de
-          Vie au travail) aussi bien en massage qu’en atelier de sensibilisation
-          et prévention.
+          Vie au travail) aussi bien en massage qu&apos;en atelier de
+          sensibilisation et prévention.
         </p>
       </div>
     </section>
