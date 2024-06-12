@@ -1,4 +1,4 @@
-import NavLink from "@/app/components/navLink/navLink";
+import NavLink from "@/app/ui/navLink/navLink";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export default function navBar() {

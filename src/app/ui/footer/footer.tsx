@@ -12,7 +12,7 @@ export default function Footer() {
         Conceptrice et Développeuse d&apos;Applications:
         <a
           href="http://www.priscillia-ammeux-portfolio.fr"
-          className="text-pink-700 hover:underline"
+          className="pl-2 text-pink-700 hover:underline"
           target="_blank"
           rel="noopener noreferrer">
           www.priscillia-ammeux-portfolio.fr

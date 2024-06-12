@@ -1,4 +1,4 @@
-import Burger from "../burger/burger";
+import Burger from "../../components/burger/burger";
 import NavBar from "../navBar/navBar";
 
 export default function navigation() {

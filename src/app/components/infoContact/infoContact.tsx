@@ -3,7 +3,7 @@ import { RiContactsBook3Line } from "react-icons/ri";
 import { FaCity } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
-import InfoItemContact from "@/app/components/infoItemContact/infoItemContact";
+import InfoItemContact from "@/app/ui/infoItemContact/infoItemContact";
 
 export default function InfoContact() {
   return (
