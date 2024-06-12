@@ -1,7 +1,6 @@
 import { BsQuestionSquare } from "react-icons/bs";
 import Title from "../title/title";
-import Link from "next/link";
-import Button from "../button/button";
+import ButtonContactMe from "../buttonContactMe/buttonContactMe";
 
 export default function Functioning() {
   return (
@@ -13,13 +12,7 @@ export default function Functioning() {
         vous recontacterai dans les plus brefs délais pour convenir d&apos;un
         rendez-vous.
       </p>
-      <Link href="/contact">
-        <Button
-          type={"button"}
-          text={"Envoyer un email"}
-          className="mt-5 mb-10"
-        />
-      </Link>
+      <ButtonContactMe />
     </section>
   );
 }
