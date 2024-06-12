@@ -10,7 +10,7 @@ export default function Functioning() {
       <p>
         Pour prendre rendez-vous, veuillez m&apos;envoyer un email avec votre
         nom, votre numéro de téléphone, votre adresse et vos disponibilités. Je
-        vous recontacterai dans les plus brefs délais pour convenir d'un
+        vous recontacterai dans les plus brefs délais pour convenir d&apos;un
         rendez-vous.
       </p>
       <Link href="/contact">
