@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import Layout from "./ui/layout/layout";
+import Functioning from "./ui/functioning/functioning";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -13,9 +14,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Layout>
-      <main className="flex min-h-screen flex-col items-center justify-between">
+      <main className="flex flex-col items-center justify-between">
         <section className="w-full bg-gray-100 flex flex-col items-center justify-center">
           <Presentation />
+          <Functioning />
         </section>
         <Analytics />
         <SpeedInsights />
