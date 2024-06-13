@@ -16,7 +16,10 @@ export default function Burger() {
     <section>
       <div className="flex justify-between items-center pt-4 pb-4">
         <h1 className="text-2xl font-bold uppercase pl-2">Stéphanie HEUDRE</h1>
-        <button className="lg:hidden" onClick={toggleMenu}>
+        <button
+          className="lg:hidden"
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Fermé le menu" : "Ouvrir le menu"}>
           {isOpen ? <FaTimes className="mr-6" /> : <FaBars className="mr-6" />}
         </button>
       </div>
