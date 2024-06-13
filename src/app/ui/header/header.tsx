@@ -41,8 +41,8 @@ export default function Header({ className }: HeaderProps) {
         <h2 className="text-3xl">Infirmière diplômée d&apos;état</h2>
         <p className="pt-10">
           J&apos;offre des services de massage professionnel à domicile ainsi
-          que sur le lieu de travail. Ces services s&apos;inscrivent dans le
-          cadre des initiatives de qualité de vie au travail (QVT).
+          que sur le lieu de travail dans le cadre de la qualité de vie au
+          travail.
         </p>
       </div>
     </header>
