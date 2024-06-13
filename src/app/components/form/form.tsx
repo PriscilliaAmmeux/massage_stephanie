@@ -144,7 +144,7 @@ export default function Form() {
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
-      <Button type="submit" text="Envoyer mon message" />
+      <Button type="submit" text="Envoyer mon message" aria-label="Cliquez sur le bouton pour envoyer le message"/>
     </form>
   );
 }
