@@ -144,6 +144,7 @@ export default function Form() {
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
+
       <Button
         type="submit"
         text="Envoyer mon message"
