@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import Layout from "./ui/layout/layout";
 import Functioning from "./ui/functioning/functioning";
+import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -18,6 +19,12 @@ export default function Home() {
         <section className="w-full bg-gray-100 flex flex-col items-center justify-center">
           <Presentation />
           <Functioning />
+          <span className="flex flex-col items-center justify-center mb-5 sm:hidden">
+            <p className="pt-5 pl-10 pr-10 pb-5">
+              Vous pouvez également me trouver sur Facebook et LinkedIn.
+            </p>
+            <SocialNetwork />
+          </span>
         </section>
         <Analytics />
         <SpeedInsights />
