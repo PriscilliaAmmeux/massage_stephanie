@@ -1,5 +1,5 @@
 import NavLink from "@/app/ui/navLink/navLink";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import SocialNetwork from "../socialNetwork/socialNetwork";
 
 export default function navBar() {
   return (
@@ -9,24 +9,7 @@ export default function navBar() {
         <NavLink href="/prestations" title="Prestations" />
         <NavLink href="/contact" title="Contact" />
       </nav>
-      <div className="flex items-center gap-2">
-        <a
-          href="https://www.facebook.com/profile.php?id=100001999839594&locale=fr_FR"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to Facebook profile"
-          className="cursor-pointer hover:text-pink-300">
-          <FaFacebook size={24} className="text-current" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/st%C3%A9phanieheudre/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Link to LinkedIn profile"
-          className="cursor-pointer hover:text-pink-300">
-          <FaLinkedin size={24} className="text-current" />
-        </a>
-      </div>
+      <SocialNetwork />
     </section>
   );
 }

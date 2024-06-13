@@ -2,7 +2,7 @@ import Image from "next/image";
 import imageProfil from "../../../../public/profil.webp";
 import Title from "../title/title";
 import { CgProfile } from "react-icons/cg";
-import NavBar from "../navBar/navBar";
+
 
 export default function Presentation() {
   return (
@@ -43,6 +43,8 @@ export default function Presentation() {
           sensibilisation et prévention.
         </p>
       </div>
+
+      
     </section>
   );
 }
