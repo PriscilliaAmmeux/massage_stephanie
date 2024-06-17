@@ -20,7 +20,7 @@ export default function Footer() {
       <section className="space-y-2">
         <p>© 2024 Stéphanie Heudre. Tous droits réservés. </p>
         <p className="underline">Mentions légales: </p>
-        <p>Siret de l'établissement: 85127227800041</p>
+        <p>Siret de l&apos;établissement: 85127227800041</p>
       </section>
     </footer>
   );
