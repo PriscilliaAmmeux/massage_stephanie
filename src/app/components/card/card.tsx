@@ -16,7 +16,9 @@ export default function Card({
   price,
 }: CardProps) {
   return (
-    <div className="relative bg-pink-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
+    <section
+      id={`prestation-${id}`}
+      className="relative bg-pink-100 rounded-lg overflow-hidden shadow-lg flex flex-col h-full">
       <div className="flex items-center justify-center">
         <img
           className="w-60 h-60 md:w-48 md:h-48 object-cover rounded-lg mt-5"
@@ -42,6 +44,6 @@ export default function Card({
           <p className="text-gray-700 text-base font-bold ">Tarif: {price} €</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
