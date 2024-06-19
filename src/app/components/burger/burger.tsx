@@ -28,7 +28,7 @@ export default function Burger() {
         <NavLink className="text-white p-4" href="/" title="Accueil" />
         <NavLink
           className="text-white p-4"
-          href="/prestations"fi
+          href="/prestations"
           title="Prestations"
         />
         <NavLink className="text-white p-4" href="/contact" title="Contact" />
