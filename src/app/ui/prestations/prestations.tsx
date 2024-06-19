@@ -6,7 +6,7 @@ import Intervention from "../intervention/intervention";
 
 export default function Prestations() {
   return (
-    <section className=" pt-10 pb-10">
+    <section className=" pt-10 pb-10" id="prestations">
       <div className="flex justify-center">
         <Title title="Prestations" Icon={RiServiceLine} />
       </div>

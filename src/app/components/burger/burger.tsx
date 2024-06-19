@@ -1,10 +1,10 @@
 "use client";
 
 import { FaBars, FaTimes } from "react-icons/fa";
-
 import styles from "../../styles/burger.module.css";
 import { useState } from "react";
 import NavLink from "@/app/ui/navLink/navLink";
+
 
 export default function Burger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +29,8 @@ export default function Burger() {
         <NavLink
           className="text-white p-4"
           href="/prestations"
-          title="Prestations"
-        />
+          title="Prestations"></NavLink>
+
         <NavLink className="text-white p-4" href="/contact" title="Contact" />
       </div>
     </section>
