@@ -23,6 +23,7 @@ export default function navBar() {
                 key={prestation.id}
               />
             ))}
+            <NavLink href={`/prestations#qvt`} title="QVT" className="pl-2" />
           </div>
         </div>
         <NavLink href="/contact" title="Contact" />

@@ -12,7 +12,9 @@ export default function Page() {
             className="bg-cover"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}>
             <Prestations />
-            <Qvt />
+            <section id="qvt">
+              <Qvt />
+            </section>
           </div>
         </section>
       </section>
