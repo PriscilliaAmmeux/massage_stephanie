@@ -6,6 +6,7 @@ interface NavLinkProps {
   className?: string;
   children?: React.ReactNode;
   showArrow?: boolean;
+  onClick?: () => void;
 }
 
 export default function NavLink({
@@ -14,13 +15,15 @@ export default function NavLink({
   className,
   children,
   showArrow = false,
+  onClick,
 }: NavLinkProps) {
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
       <h1
         className={`inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap ${
           className || ""
-        }`}>
+        }`}
+        onClick={onClick}>
         {title}
         {showArrow && (
           <svg
