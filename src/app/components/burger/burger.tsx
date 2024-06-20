@@ -31,30 +31,37 @@ export default function Burger() {
 
       <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
         <NavLink
-          className="text-white p-4"
+          className="text-white p-4 uppercase"
           href="/"
           title="Accueil"
           onClick={handleCloseMenu}
         />
+        <NavLink
+          className="text-white p-4 uppercase"
+          href="/prestations"
+          title="Prestations"
+          onClick={handleCloseMenu}
+        />
+
         <div className="pl-4">
           {data.map((prestation) => (
             <NavLink
               href={`/prestations#prestation-${prestation.id}`}
               title={prestation.title}
-              className="text-white p-2"
+              className="text-white p-2 "
               key={prestation.id}
               onClick={handleCloseMenu}
             />
           ))}
           <NavLink
             href={`/prestations#qvt`}
-            title="QVT"
+            title="Qualité de Vie au Travail"
             className="text-white p-2"
             onClick={handleCloseMenu}
           />
         </div>
         <NavLink
-          className="text-white p-4"
+          className="text-white p-4 uppercase"
           href="/contact"
           title="Contact"
           onClick={handleCloseMenu}

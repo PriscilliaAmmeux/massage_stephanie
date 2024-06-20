@@ -6,12 +6,12 @@ export default function navBar() {
   return (
     <section className="flex justify-between items-center bg-gray-800 text-white p-4 w-full">
       <nav className="flex space-x-4">
-        <NavLink href="/" title="Accueil" />
+        <NavLink href="/" title="Accueil" className="uppercase ml-6" />
         <div className="relative group">
           <NavLink
             href="/prestations"
             title="Prestations"
-            className="inline-flex items-center group-hover:underline"
+            className="inline-flex items-center group-hover:underline uppercase"
             showArrow={true}
           />
           <div className="absolute hidden group-hover:block bg-white text-black">
@@ -23,10 +23,14 @@ export default function navBar() {
                 key={prestation.id}
               />
             ))}
-            <NavLink href={`/prestations#qvt`} title="QVT" className="pl-2" />
+            <NavLink
+              href={`/prestations#qvt`}
+              title="Qualité de Vie au Travail"
+              className="pl-2"
+            />
           </div>
         </div>
-        <NavLink href="/contact" title="Contact" />
+        <NavLink href="/contact" title="Contact" className="uppercase" />
       </nav>
       <SocialNetwork />
     </section>
