@@ -40,11 +40,11 @@ export default function Qvt() {
 
       <div className="md:w-2/3 md:pl-10">
         <div className="flex justify-center md:justify-start mb-4">
-          <Title title="CQVT" Icon={MdOutlineWork} />
+          <Title title="QVT" Icon={MdOutlineWork} />
         </div>
         <p className="text-lg leading-relaxed mb-4">
           <span className="font-bold">
-            CQVT signifie &quot;Conditions de Qualité de Vie au Travail&quot;.
+            QVT signifie &quot;Qualité de Vie au Travail&quot;.
           </span>{" "}
           C&apos;est un aspect important de votre entreprise car le bien-être de
           vos employés est essentiel pour leur productivité et leur satisfaction

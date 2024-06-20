@@ -35,8 +35,8 @@ export default function BurgerMenu() {
             </NavLink>
           </Link>
           <Link href="/prestations#prestation-4" passHref>
-            <NavLink className="text-white p-4" title="CQVT" href={""}>
-              CQVT
+            <NavLink className="text-white p-4" title="QVT" href={""}>
+              QVT
             </NavLink>
           </Link>
         </div>
