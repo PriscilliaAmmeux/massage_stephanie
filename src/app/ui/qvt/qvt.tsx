@@ -40,20 +40,20 @@ export default function Qvt() {
 
       <div className="md:w-2/3 md:pl-10">
         <div className="flex justify-center md:justify-start mb-4">
-          <Title title="QVT" Icon={MdOutlineWork} />
+          <Title title="Qualité de Vie au Travail (QVT)" Icon={MdOutlineWork} />
         </div>
         <p className="text-lg leading-relaxed mb-4">
           <span className="font-bold">
-            QVT signifie &quot;Qualité de Vie au Travail&quot;.
-          </span>{" "}
-          C&apos;est un aspect important de votre entreprise car le bien-être de
-          vos employés est essentiel pour leur productivité et leur satisfaction
-          au travail.
+            La &quot;Qualité de Vie au Travail&quot; 
+          </span>
+          est un aspect important de votre entreprise car le bien-être de vos
+          employés est essentiel pour leur productivité et leur satisfaction au
+          travail.
         </p>
         <p className="text-lg leading-relaxed mb-4">
           Chaques entreprises peuvent bénéficier d&apos;une subvention QVT pour
           améliorer les conditions de travail et promouvoir le bien-être au sein
-          de l&apos;organisation. 
+          de l&apos;organisation.
         </p>
         <p className="text-lg leading-relaxed mb-4">
           Le CSE (Comité Social et Économique) joue également un rôle clé dans
