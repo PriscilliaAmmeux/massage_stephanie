@@ -51,9 +51,9 @@ export default function Qvt() {
           au travail.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          Les entreprises de plus de 50 salariés peuvent bénéficier d&apos;une
-          subvention QVT pour améliorer les conditions de travail et promouvoir
-          le bien-être au sein de l&apos;organisation.
+          Chaques entreprises peuvent bénéficier d&apos;une subvention QVT pour
+          améliorer les conditions de travail et promouvoir le bien-être au sein
+          de l&apos;organisation. 
         </p>
         <p className="text-lg leading-relaxed mb-4">
           Le CSE (Comité Social et Économique) joue également un rôle clé dans
