@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../../styles/burger.module.css";
 import { useState } from "react";
 import NavLink from "@/app/ui/navLink/navLink";
-
+import data from "../../../../api/prestations.json";
 
 export default function Burger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +12,11 @@ export default function Burger() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <section>
       <div className="flex justify-between items-center pt-4 pb-4">
@@ -25,13 +30,35 @@ export default function Burger() {
       </div>
 
       <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
-        <NavLink className="text-white p-4" href="/" title="Accueil" />
         <NavLink
           className="text-white p-4"
-          href="/prestations"
-          title="Prestations"></NavLink>
-
-        <NavLink className="text-white p-4" href="/contact" title="Contact" />
+          href="/"
+          title="Accueil"
+          onClick={handleCloseMenu}
+        />
+        <div className="pl-4">
+          {data.map((prestation) => (
+            <NavLink
+              href={`/prestations#prestation-${prestation.id}`}
+              title={prestation.title}
+              className="text-white p-2"
+              key={prestation.id}
+              onClick={handleCloseMenu}
+            />
+          ))}
+          <NavLink
+            href={`/prestations#qvt`}
+            title="QVT"
+            className="text-white p-2"
+            onClick={handleCloseMenu}
+          />
+        </div>
+        <NavLink
+          className="text-white p-4"
+          href="/contact"
+          title="Contact"
+          onClick={handleCloseMenu}
+        />
       </div>
     </section>
   );
