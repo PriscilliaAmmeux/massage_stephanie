@@ -1,5 +1,6 @@
 import NavLink from "@/app/ui/navLink/navLink";
 import SocialNetwork from "../socialNetwork/socialNetwork";
+import data from "../../../../api/prestations.json";
 
 export default function navBar() {
   return (
@@ -13,22 +14,15 @@ export default function navBar() {
             className="inline-flex items-center group-hover:underline"
             showArrow={true}
           />
-          <div className="absolute hidden group-hover:block bg-white text-black ">
-            <NavLink
-              href="/prestations#{id}"
-              title="Massage Assis ou AMMA"
-              className="pl-2"
-            />
-            <NavLink
-              href="/prestations#b"
-              title="Chi Nei Tsang"
-              className="pl-2"
-            />
-            <NavLink
-              href="/prestations#c"
-              title="Réfléxologie crânienne"
-              className="pl-2"
-            />
+          <div className="absolute hidden group-hover:block bg-white text-black">
+            {data.map((prestation) => (
+              <NavLink
+                href={`/prestations#prestation-${prestation.id}`}
+                title={prestation.title}
+                className="pl-2"
+                key={prestation.id}
+              />
+            ))}
           </div>
         </div>
         <NavLink href="/contact" title="Contact" />
