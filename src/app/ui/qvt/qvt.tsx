@@ -61,11 +61,11 @@ export default function Qvt() {
           intérêts des employés et en veillant à leur bien-être au travail.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          En choisissant notre prestation de QVT, vous investissez dans une
-          culture d&apos;entreprise positive et dynamique. Nos experts vous
-          accompagnent pour mettre en place des solutions adaptées à vos besoins
-          spécifiques, permettant d&apos;augmenter la satisfaction et la
-          productivité de vos équipes.
+          En choisissant la prestation de QVT, vous investissez dans une culture
+          d&apos;entreprise positive et dynamique. Je vous accompagne pour
+          mettre en place des solutions adaptées à vos besoins spécifiques,
+          permettant d&apos;augmenter la satisfaction et la productivité de vos
+          équipes.
         </p>
         <p className="text-lg leading-relaxed mb-4">
           <span className="font-bold">Pourquoi choisir ce service ?</span>
@@ -78,7 +78,7 @@ export default function Qvt() {
         </ul>
         <p className="text-lg leading-relaxed mb-4">
           <span className="font-bold">Contactez-moi dès aujourd&apos;hui</span>{" "}
-          pour découvrir comment nous pouvons vous aider à transformer votre
+          pour découvrir comment je peux vous aider à transformer votre
           entreprise en un lieu de travail épanouissant et productif.
         </p>
         <div className="flex justify-center md:justify-start">
