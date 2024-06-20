@@ -4,7 +4,7 @@ import ButtonContactMe from "../buttonContactMe/buttonContactMe";
 
 export default function Functioning() {
   return (
-    <section className="bg-pink-100 rounded p-10 space-y-4">
+    <section className="w-full bg-pink-100 rounded p-10 space-y-4">
       <Title title={"Comment prendre rendez vous ?"} Icon={BsQuestionSquare} />
       <p>
         Pour prendre rendez-vous, veuillez m&apos;envoyer un email avec votre
