@@ -3,7 +3,6 @@ import imageProfil from "../../../../public/profil.webp";
 import Title from "../title/title";
 import { CgProfile } from "react-icons/cg";
 
-
 export default function Presentation() {
   return (
     <section className="max-w-6xl p-5 flex flex-col md:flex-row items-center font-sans text-gray-800 mt-10 mb-10">
@@ -16,7 +15,7 @@ export default function Presentation() {
       />
 
       <div>
-        <Title title="Présentation" Icon={CgProfile} />
+        <Title title="Qui suis je ?" />
         <p className="text-lg leading-relaxed">
           <span className="font-bold">
             Infirmière de formation (diplômée d&apos;état) et attachée de
@@ -43,8 +42,6 @@ export default function Presentation() {
           sensibilisation et prévention.
         </p>
       </div>
-
-      
     </section>
   );
 }

@@ -3,12 +3,12 @@ import { IconType } from "react-icons";
 
 interface TitleProps {
   title: string;
-  Icon: IconType;
+  Icon?: IconType;
 }
 
 const Title: React.FC<TitleProps> = ({ title, Icon }) => (
   <div className="flex items-center mb-4">
-    <Icon className="text-xl text-pink-700 mr-2" />
+    {Icon && <Icon className="text-xl text-pink-700 mr-2" />}
     <h1 className="text-xl text-pink-700 font-bold">{title}</h1>
   </div>
 );
