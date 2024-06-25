@@ -10,8 +10,8 @@ export default function RgpdModal({ onClose }: FooterProps) {
       <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
         <Title title="Politique de Confidentialité" />
         <p className="mb-4">
-          Lors de l'envoi du formulaire de contact, les données conservées le
-          sont à des fins professionnelles dans le cadre de mon activité
+          Lors de l&apos;envoi du formulaire de contact, les données conservées
+          le sont à des fins professionnelles dans le cadre de mon activité
           seulement.
         </p>
         <p className="mb-4">
