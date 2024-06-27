@@ -1,11 +1,11 @@
-import NavLink from "@/app/ui/navLink/navLink";
+import NavLink from "@/app/components/navLink/navLink";
 import SocialNetwork from "../socialNetwork/socialNetwork";
 import data from "../../../../api/prestations.json";
 import Logo from "../logo/logo";
 
-export default function navBar() {
+export default function NavBar() {
   return (
-    <section className="flex justify-between items-center bg-gray-400 p-4 w-full">
+    <section className="flex justify-between items-center bg-gray-700 text-white p-4 w-full">
       <Logo width={50} height={50} />
       <nav className="flex space-x-4">
         <NavLink href="/" title="Accueil" className="uppercase ml-6" />
@@ -22,13 +22,17 @@ export default function navBar() {
                 href={`/prestations#prestation-${prestation.id}`}
                 title={prestation.title}
                 className="pl-2"
+                activeClassName="text-black"
                 key={prestation.id}
+                ignoreActiveStyle={true}
               />
             ))}
             <NavLink
               href={`/prestations#qvt`}
               title="Qualité de Vie au Travail"
               className="pl-2"
+              activeClassName="text-black"
+              ignoreActiveStyle={true}
             />
           </div>
         </div>

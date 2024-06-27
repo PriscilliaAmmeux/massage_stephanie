@@ -6,32 +6,40 @@ interface NavLinkProps {
   href: string;
   title: string;
   className?: string;
+  activeClassName?: string;
   children?: React.ReactNode;
   showArrow?: boolean;
   onClick?: () => void;
+  ignoreActiveStyle?: boolean;
 }
 
 export default function NavLink({
   href,
   title,
-  className,
+  className = "",
+  activeClassName = "",
   children,
   showArrow = false,
   onClick,
+  ignoreActiveStyle = false,
 }: NavLinkProps) {
   const pathname = usePathname();
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    setIsActive(pathname === href);
-  }, [pathname, href]);
+    if (!ignoreActiveStyle) {
+      setIsActive(pathname === href);
+    }
+  }, [pathname, href, ignoreActiveStyle]);
+
+  const baseClass =
+    "inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap";
+  const activeClass = isActive ? activeClassName || "text-pink-700" : "";
 
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
       <h1
-        className={`inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap ${
-          isActive ? "text-pink-700" : "text-black"
-        } ${className || ""}`}
+        className={`${baseClass} ${activeClass} ${className}`}
         onClick={onClick}>
         {title}
         {showArrow && (

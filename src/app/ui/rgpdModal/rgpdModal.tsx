@@ -1,3 +1,4 @@
+import Button from "../button/button";
 import Title from "../title/title";
 
 interface FooterProps {
@@ -22,11 +23,7 @@ export default function RgpdModal({ onClose }: FooterProps) {
           Vous pouvez à tout moment demander la suppression de vos données en me
           contactant par mail.
         </p>
-        <button
-          onClick={onClose}
-          className="mt-4 px-4 py-2 bg-pink-700 text-white rounded hover:bg-blue-700">
-          Fermer
-        </button>
+        <Button type="button" text="Fermer" onClick={onClose} />
       </div>
     </section>
   );

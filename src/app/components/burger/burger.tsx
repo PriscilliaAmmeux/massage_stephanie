@@ -3,7 +3,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../../styles/burger.module.css";
 import { useState } from "react";
-import NavLink from "@/app/ui/navLink/navLink";
+import NavLink from "@/app/components/navLink/navLink";
 import data from "../../../../api/prestations.json";
 
 export default function Burger() {
