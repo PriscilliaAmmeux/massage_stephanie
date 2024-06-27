@@ -27,7 +27,7 @@ export default function Card({
         />
       </div>
       <div className="px-6 py-4 mb-20">
-        <div className="font-bold text-xl mb-2">{title}</div>
+        <h1 className="font-bold text-xl mb-2">{title}</h1>
         {typeof text === "string" ? (
           <p className="text-gray-700 text-base">{text}</p>
         ) : (
