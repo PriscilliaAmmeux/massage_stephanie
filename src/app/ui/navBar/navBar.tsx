@@ -1,4 +1,4 @@
-import NavLink from "@/app/ui/navLink/navLink";
+import NavLink from "@/app/components/navLink/navLink";
 import SocialNetwork from "../socialNetwork/socialNetwork";
 import data from "../../../../api/prestations.json";
 import Logo from "../logo/logo";

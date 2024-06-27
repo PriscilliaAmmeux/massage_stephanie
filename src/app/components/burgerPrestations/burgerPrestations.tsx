@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import NavLink from "@/app/ui/navLink/navLink";
+import NavLink from "@/app/components/navLink/navLink";
 
 export default function BurgerMenu() {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
