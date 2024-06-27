@@ -5,7 +5,7 @@ import Logo from "../logo/logo";
 
 export default function navBar() {
   return (
-    <section className="flex justify-between items-center bg-gray-700 text-white p-4 w-full">
+    <section className="flex justify-between items-center bg-gray-400 p-4 w-full">
       <Logo width={50} height={50} />
       <nav className="flex space-x-4">
         <NavLink href="/" title="Accueil" className="uppercase ml-6" />

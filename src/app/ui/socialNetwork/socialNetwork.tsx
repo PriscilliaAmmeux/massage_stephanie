@@ -8,7 +8,7 @@ export default function SocialNetwork() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Link to Facebook profile"
-        className="cursor-pointer hover:text-pink-300">
+        className="cursor-pointer hover:text-pink-700">
         <FaFacebook size={24} className="text-current" />
       </a>
       <a
@@ -16,7 +16,7 @@ export default function SocialNetwork() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Link to LinkedIn profile"
-        className="cursor-pointer hover:text-pink-300">
+        className="cursor-pointer hover:text-pink-700">
         <FaLinkedin size={24} className="text-current" />
       </a>
     </section>

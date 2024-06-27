@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 interface NavLinkProps {
   href: string;
@@ -17,12 +19,19 @@ export default function NavLink({
   showArrow = false,
   onClick,
 }: NavLinkProps) {
+  const pathname = usePathname();
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    setIsActive(pathname === href);
+  }, [pathname, href]);
+
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
       <h1
-        className={`inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap  ${
-          className || ""
-        }`}
+        className={`inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap ${
+          isActive ? "text-pink-700" : "text-black"
+        } ${className || ""}`}
         onClick={onClick}>
         {title}
         {showArrow && (
