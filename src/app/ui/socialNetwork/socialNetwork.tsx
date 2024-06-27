@@ -2,7 +2,7 @@ import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 export default function SocialNetwork() {
   return (
-    <section className="flex items-center gap-2">
+    <section className="flex items-center gap-2 text-white">
       <a
         href="https://www.facebook.com/profile.php?id=100001999839594&locale=fr_FR"
         target="_blank"
