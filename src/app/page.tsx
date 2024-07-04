@@ -1,6 +1,5 @@
 import Presentation from "./ui/presentation/presentation";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import Layout from "./ui/layout/layout";
 import Functioning from "./ui/functioning/functioning";
@@ -15,8 +14,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Layout>
-      <main className="flex flex-col items-center justify-between">
-        <section className="w-full bg-gray-100 flex flex-col items-center justify-center">
+      <main className="flex flex-col items-center justify-between bg-gray-100">
+        <section className="w-full  flex flex-col items-center justify-center">
           <Presentation />
           <Functioning />
           <span className="flex flex-col items-center justify-center mb-5 sm:hidden">
@@ -27,7 +26,6 @@ export default function Home() {
           </span>
         </section>
         <Analytics />
-        <SpeedInsights />
       </main>
     </Layout>
   );

@@ -33,7 +33,7 @@ export default function NavLink({
   }, [pathname, href, ignoreActiveStyle]);
 
   const baseClass =
-    "inline-flex items-center font-semibold hover:underline mr-32 whitespace-nowrap";
+    "inline-flex items-center font-semibold hover:underline md:mr-32 mr-12 whitespace-nowrap";
   const activeClass = isActive ? activeClassName || "text-pink-700" : "";
 
   return (
