@@ -22,7 +22,7 @@ export default function Layout({ children }: LayoutProps) {
   };
   return (
     <section>
-      <Header className="hidden sm:block" />
+      <Header className="hidden md:block" />
       <Navigation />
       {children}
       <Footer onRgpdClick={handleRgpdClick} />
