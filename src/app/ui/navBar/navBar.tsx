@@ -38,7 +38,7 @@ export default function NavBar() {
         </div>
         <NavLink href="/contact" title="Contact" className="uppercase" />
       </nav>
-      <SocialNetwork />
+      <SocialNetwork theme="light" />
     </section>
   );
 }

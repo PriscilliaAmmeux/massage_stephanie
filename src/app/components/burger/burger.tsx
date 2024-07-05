@@ -40,10 +40,10 @@ export default function Burger() {
       onClick={(e) => e.stopPropagation()}
       // Prevent closing when clicking inside the menu
     >
-      <div className="flex justify-between items-center p-4">
+      <div className="flex justify-between items-center mt-2">
         <Logo width={50} height={50} />
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <h1 className="text-2xl font-bold pl-2">Stéphanie Heudre</h1>
           <h2 className="text-xl">Praticienne bien-être certifiée</h2>
         </div>
@@ -86,10 +86,12 @@ export default function Burger() {
           />
           <NavLink
             href="/prestations"
-            title="Prestations"
-            onClick={handleCloseMenu}
-            className="uppercase"
-          />
+            title="Prestations ▼"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            className="uppercase mt-5"></NavLink>
+
           <div className="pl-4 flex flex-col items-center justify-center">
             {data.map((prestation) => (
               <NavLink
@@ -103,16 +105,19 @@ export default function Burger() {
               href={`/prestations#qvt`}
               title="Qualité de Vie au Travail"
               onClick={handleCloseMenu}
-              className="uppercase"
+              className="uppercase mt-5"
             />
           </div>
+
           <NavLink
             href="/contact"
             title="Contact"
             onClick={handleCloseMenu}
-            className="uppercase"
+            className="uppercase mt-5"
           />
-          <SocialNetwork />
+          <span className="flex items-center mt-5">
+            <SocialNetwork theme="dark" />
+          </span>
         </nav>
       )}
     </section>

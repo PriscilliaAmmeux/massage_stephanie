@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Layout>
-      <main className="flex flex-col items-center justify-between bg-gray-100">
+      <main className="flex flex-col items-center justify-between ">
         <section className="w-full  flex flex-col items-center justify-center">
           <Presentation />
           <Functioning />
@@ -22,7 +22,7 @@ export default function Home() {
             <p className="pt-5 pl-10 pr-10 pb-5">
               Vous pouvez également me trouver sur Facebook et LinkedIn.
             </p>
-            <SocialNetwork />
+            <SocialNetwork theme="dark" />
           </span>
         </section>
         <Analytics />

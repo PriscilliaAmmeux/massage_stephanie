@@ -1,0 +1,13 @@
+.socialNetworkLight {
+  color: var(--white-color); 
+}
+.socialNetworkLight:hover {
+  color: var(--pink-color);
+}
+
+.socialNetworkDark {
+  color: var(--pink-color); 
+}
+.socialNetworkDark:hover {
+  color: var(--black-color); 
+}
