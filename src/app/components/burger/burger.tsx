@@ -41,10 +41,12 @@ export default function Burger() {
       // Prevent closing when clicking inside the menu
     >
       <div className="flex justify-between items-center mt-2">
-        <Logo width={50} height={50} />
+        <span className="ml-2">
+          <Logo theme="dark" width={50} height={50} />
+        </span>
 
         <div className="flex flex-col items-center ">
-          <h1 className="text-2xl font-bold pl-2">Stéphanie Heudre</h1>
+          <h1 className="text-2xl font-bold">Stéphanie Heudre</h1>
           <h2 className="text-xl">Praticienne bien-être certifiée</h2>
         </div>
 
@@ -63,18 +65,16 @@ export default function Burger() {
           } flex flex-col items-center justify-start `}
           onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
         >
-          <div className="flex justify-between items-center p-4">
-            <Logo width={50} height={50} />
-
-            <div className="flex flex-col items-center">
-              <h1 className="text-2xl font-bold pl-2">Stéphanie Heudre</h1>
+          <div className="flex justify-around items-center mb-5 mr-5 ml-5 ">
+            <span className="mr-5">
+              <Logo theme="dark" width={50} height={50} />
+            </span>
+            <div className="flex flex-col items-center ">
+              <h1 className="text-2xl font-bold">Stéphanie Heudre</h1>
               <h2 className="text-xl">Praticienne bien-être certifiée</h2>
             </div>
-
-            <button
-              className="flex justify-between items-center p-4"
-              onClick={handleCloseMenu}>
-              <FaTimes className="cursor-pointer" />
+            <button onClick={handleCloseMenu}>
+              <FaTimes className="cursor-pointer ml-5 " />
             </button>
           </div>
 
