@@ -9,7 +9,7 @@ interface NavLinkProps {
   activeClassName?: string;
   children?: React.ReactNode;
   showArrow?: boolean;
-  onClick?: () => void;
+  onClick?: (event: React.MouseEvent<HTMLHeadingElement>) => void;
   ignoreActiveStyle?: boolean;
 }
 
@@ -33,7 +33,7 @@ export default function NavLink({
   }, [pathname, href, ignoreActiveStyle]);
 
   const baseClass =
-    "inline-flex items-center font-semibold hover:underline md:mr-32 mr-12 whitespace-nowrap";
+    "inline-flex justify-center items-center font-semibold hover:underline md:mr-32 mr-0 whitespace-nowrap";
   const activeClass = isActive ? activeClassName || "text-pink-700" : "";
 
   return (

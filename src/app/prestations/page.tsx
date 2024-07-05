@@ -8,9 +8,7 @@ export default function Page() {
     <Layout>
       <section className="flex min-h-screen flex-col items-center justify-between">
         <section className="w-full flex flex-col items-center justify-center">
-          <div
-            className="bg-cover"
-            style={{ backgroundImage: `url(${backgroundImage.src})` }}>
+          <div className="bg-cover">
             <Prestations />
             <section id="qvt">
               <Qvt />

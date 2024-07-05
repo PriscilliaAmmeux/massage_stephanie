@@ -1,6 +1,12 @@
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import styles from "../../styles/socialNetwork.module.css";
 
-export default function SocialNetwork() {
+interface SocialNetworkProps {
+  theme: "light" | "dark";
+}
+export default function SocialNetwork({ theme }: SocialNetworkProps) {
+  const className =
+    theme === "dark" ? styles.socialNetworkDark : styles.socialNetworkLight;
   return (
     <section className="flex items-center gap-2 text-white">
       <a
@@ -8,7 +14,7 @@ export default function SocialNetwork() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Link to Facebook profile"
-        className="cursor-pointer hover:text-pink-700">
+        className={className}>
         <FaFacebook size={24} className="text-current" />
       </a>
       <a
@@ -16,7 +22,7 @@ export default function SocialNetwork() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Link to LinkedIn profile"
-        className="cursor-pointer hover:text-pink-700">
+        className={className}>
         <FaLinkedin size={24} className="text-current" />
       </a>
     </section>
