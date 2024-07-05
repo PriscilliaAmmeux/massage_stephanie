@@ -3,7 +3,7 @@ import Logo from "../logo/logo";
 export default function Footer({ onRgpdClick }: { onRgpdClick: () => void }) {
   return (
     <footer className="flex flex-col md:flex-row items-center gap-6 w-full bg-gray-700 text-white sm:p-6 md:p-10 flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm">
-      <Logo width={200} height={200} />
+      <Logo width={200} height={200} theme={"light"} />
       <section>
         <div className="flex flex-col  items-center space-y-2">
           <p>© 2024 Stéphanie Heudre. Tous droits réservés. </p>
