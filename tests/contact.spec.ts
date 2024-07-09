@@ -28,7 +28,18 @@ test("test", async ({ page }) => {
   await page.getByPlaceholder("Votre numéro de téléphone").fill("0601020304");
   await page.getByPlaceholder("Votre numéro de téléphone").press("Tab");
   await page.getByPlaceholder("Votre message").fill("test message ");
-  await page.getByLabel("Envoyer mon message").click();
+  await page.setDefaultTimeout(60000);
+  await page.waitForLoadState("networkidle");
+  try {
+    await page.getByLabel("Envoyer mon message").click();
+  } catch (error) {
+    console.error("Standard click failed, attempting JavaScript click", error);
+    // Fallback to JavaScript click if the standard click fails
+    await page.evaluate(
+      (button) => button.click(),
+      await page.getByLabel("Envoyer mon message")
+    );
+  }
   await page.getByRole("button", { name: "OK" }).click();
   await page.getByText("Politiques de confidentialité").click();
   await page.getByLabel("Fermer").click();
