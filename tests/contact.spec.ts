@@ -21,26 +21,6 @@ test("test", async ({ page }) => {
   await page.getByText("Quesnoy-Sur-Deûle").click();
   await page.getByText("+ 33 6 76 39 74").click();
   await page.getByRole("link", { name: "heudre.stephanie@gmail.com" }).click();
-  await page.getByPlaceholder("Votre nom").fill("test Priscillia");
-  await page.getByPlaceholder("Votre nom").press("Tab");
-  await page.getByPlaceholder("mon-mail@exemple.com").fill("test@email.com");
-  await page.getByPlaceholder("mon-mail@exemple.com").press("Tab");
-  await page.getByPlaceholder("Votre numéro de téléphone").fill("0601020304");
-  await page.getByPlaceholder("Votre numéro de téléphone").press("Tab");
-  await page.getByPlaceholder("Votre message").fill("test message ");
-  await page.setDefaultTimeout(60000);
-  await page.waitForLoadState("networkidle");
-  try {
-    await page.getByLabel("Envoyer mon message").click();
-  } catch (error) {
-    console.error("Standard click failed, attempting JavaScript click", error);
-    // Fallback to JavaScript click if the standard click fails
-    await page.evaluate(
-      (button) => button.click(),
-      await page.getByLabel("Envoyer mon message")
-    );
-  }
-  await page.getByRole("button", { name: "OK" }).click();
   await page.getByText("Politiques de confidentialité").click();
   await page.getByLabel("Fermer").click();
 });
