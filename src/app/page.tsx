@@ -8,7 +8,7 @@ import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
   description:
-    "Découvrez les services de massage bien-être proposés par Stéphanie Heudre, infirmière diplômée d'état et spécialiste en qualité de vie au travail. Profitez de massages relaxants et thérapeutiques à domicile ou sur votre lieu de travail. Stéphanie intervient également en entreprise pour des journées QVT, et propose des massages inspirés de la médecine chinoise, comme le Chi Nei Tsang, pour une détente optimale. Engagez-vous dans une démarche de RSE en améliorant la QVCT grâce à ces services de massage et de bien-être.",
+    "Massages bien-être par Stéphanie Heudre, infirmière diplômée : massages relaxants à domicile/entreprise, Chi Nei Tsang, QVT et RSE. Comines et alentours.",
 };
 
 export default function Home() {
