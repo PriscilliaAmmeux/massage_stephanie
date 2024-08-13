@@ -38,7 +38,7 @@ export default function NavLink({
 
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
-      <h1
+      <h2
         className={`${baseClass} ${activeClass} ${className}`}
         onClick={onClick}>
         {title}
@@ -56,7 +56,7 @@ export default function NavLink({
             />
           </svg>
         )}
-      </h1>
+      </h2>
       {children}
     </Link>
   );

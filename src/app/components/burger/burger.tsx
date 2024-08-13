@@ -46,7 +46,7 @@ export default function Burger() {
         </span>
 
         <div className="flex flex-col items-center ">
-          <h1 className="text-2xl font-bold">Stéphanie Heudre</h1>
+          <h2 className="text-2xl font-bold">Stéphanie Heudre</h2>
           <h2 className="text-xl">Praticienne bien-être certifiée</h2>
         </div>
 
@@ -72,9 +72,9 @@ export default function Burger() {
               <Logo theme="dark" width={50} height={50} />
             </span>
             <div className="flex flex-col items-center ">
-              <h1 className="text-2xl font-bold items-center">
+              <h2 className="text-2xl font-bold items-center">
                 Stéphanie Heudre
-              </h1>
+              </h2>
               <h2 className="text-xl items-center text-center">
                 Praticienne bien-être certifiée
               </h2>
