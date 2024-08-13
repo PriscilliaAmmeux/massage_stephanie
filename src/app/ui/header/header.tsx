@@ -37,8 +37,11 @@ export default function Header({ className }: HeaderProps) {
       />
 
       <div className="absolute flex flex-col items-center justify-center w-full h-full">
-        <h1 className="text-4xl font-bold">Stéphanie HEUDRE</h1>
-        <h2 className="text-3xl">Praticienne bien-être certifiée</h2>
+        <h1 className="text-4xl font-bold flex flex-col items-center">
+          Stéphanie HEUDRE
+          <span className="text-3xl">Praticienne bien-être certifiée</span>
+        </h1>
+
         <p className="pt-10">
           J&apos;offre des services de massage à domicile ainsi que sur le lieu
           de travail dans le cadre de la qualité de vie au travail.
