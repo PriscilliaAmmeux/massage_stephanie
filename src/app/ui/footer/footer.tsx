@@ -1,22 +1,20 @@
 import Logo from "../logo/logo";
 
-export default function Footer({ onRgpdClick }: { onRgpdClick: () => void }) {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="flex flex-col md:flex-row items-center gap-6 w-full bg-gray-700 text-white sm:p-6 md:p-10 flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm">
       <Logo width={200} height={200} theme={"light"} />
       <section>
         <div className="flex flex-col  items-center space-y-2">
-          <p>© 2024 Stéphanie Heudre. Tous droits réservés. </p>
-          <p className="underline">Mentions légales: </p>
-          <p>Siret de l&apos;établissement: 85127227800041</p>
-          <p
-            className="font-bold hover:underline"
-            onClick={onRgpdClick}
-            style={{ cursor: "pointer" }}>
-            Politiques de confidentialité
-          </p>
+          <p>© {currentYear} Stéphanie Heudre. Tous droits réservés. </p>
+          <a
+            href="/legalNotices"
+            className="hover:text-pink-700 hover:font-bold cursor-pointer">
+            Mentions légales
+          </a>
         </div>
-        <div className="flex justify-center text-2xl">~</div>
+        <div className="flex justify-center text-xl">~</div>
         <div>
           <p className="flex flex-col space-y-2 items-center">
             Créé par <span className="font-bold ">Priscillia Ammeux</span>
