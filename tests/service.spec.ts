@@ -12,7 +12,6 @@ test("test", async ({ page }) => {
     .getByRole("heading", { name: "Qualité de Vie au Travail (" })
     .click();
   await page.getByLabel("Envoyer un email").click();
-  await page.getByText("Politiques de confidentialité").click();
   await page.getByLabel("Fermer").click();
   await page
     .locator("footer")

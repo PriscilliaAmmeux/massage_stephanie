@@ -15,8 +15,7 @@ test("test", async ({ page }) => {
     .click();
   await page.getByLabel("Envoyer un email").click();
   await page.getByText("Mentions légales:").click();
-  await page.getByText("Politiques de confidentialité").click();
-  await page.getByLabel("Fermer").click();
+    await page.getByLabel("Fermer").click();
   await page
     .locator("footer")
     .getByRole("img", { name: "logo SH pour Stéphanie Heudre" })
