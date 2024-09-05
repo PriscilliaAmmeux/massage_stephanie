@@ -5,7 +5,7 @@ import Layout from "../ui/layout/layout";
 import legalNotices from "../../../api/legalNotices.json";
 
 export const metadata: Metadata = {
-  title: "Mentions légales - Priscillia Ammeux",
+  title: "Mentions légales - Stéphanie HEUDRE",
 };
 
 export default function LegalNotices() {
