@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Form from "../components/form/form";
 import InfoContact from "../components/infoContact/infoContact";
 import Layout from "../ui/layout/layout";
+
+export const metadata: Metadata = {
+  title: "Contact - Stéphanie HEUDRE",
+};
 
 export default function Page() {
   return (
