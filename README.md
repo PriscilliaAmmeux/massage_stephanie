@@ -25,18 +25,18 @@ To install and run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/repo-name.git
-  ```
+
 
 2. Navigate to the project directory:
 
     ```bash
      cd repo-name
-    ```
+
 
 3. Install the dependencies
      ```bash
      npm install
-     ```
+
 
 4. Start the development server:
 
@@ -48,7 +48,7 @@ To install and run this project locally, follow these steps:
     pnpm dev
     # or
     bun dev
-    ```
+
 
 5- Open http://localhost:3000 in your browser to see the site in action.
 
