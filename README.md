@@ -1,32 +1,62 @@
 # Massage Stephanie
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project is a website available at massage-stephanie-heudre.fr, offering massage and CQVT services. 
+The site is open-source and welcomes suggestions through pull requests.
 
-This project is a website available at massage-stephanie-heudre.fr, offering massage and CQVT services. The site is open-source and welcomes suggestions through pull requests.
+## Technologies Used
 
-🚀 Hacktoberfest Participation 2024: Contributions to this project are welcome during Hacktoberfest! Please feel free to submit your pull requests.
+- **Framework:** [Next.js](https://nextjs.org/) for web development.
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) for styling components.
+- **Deployment:** The website will be deployed on [Vercel](https://vercel.com/) for optimal performance.
 
-💡 Pull Request Guidelines: When submitting a PR, please provide detailed information about your suggestions or changes. I appreciate any advice or feedback on my code, as I am always looking to improve!
+## 🚀 Hacktoberfest Participation 2024
 
-## Getting Started
+Contributions to this project are welcome during Hacktoberfest! Please feel free to submit your pull requests.
 
-First, run the development server:
+## 💡 Pull Request Guidelines
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+When submitting a PR, please provide detailed information about your suggestions or changes. I appreciate any advice or feedback on my code, as I am always looking to improve!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To install and run this project locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/repo-name.git
+  ```
+
+2. Navigate to the project directory:
+
+    ```bash
+     cd repo-name
+    ```
+
+3. Install the dependencies
+     ```bash
+     npm install
+     ```
+
+4. Start the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
+
+5- Open http://localhost:3000 in your browser to see the site in action.
+
+### Contributing
+Contributions are welcome! If you would like to suggest changes or report issues, please feel free to submit a Pull Request or open an issue in the repository.
+
+### Contact
+For any questions or suggestions, you can reach me at priscillia.ammeux.pro@gmail.com
 
 ## Learn More
 
