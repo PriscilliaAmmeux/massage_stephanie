@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This project is a website available at massage-stephanie-heudre.fr, offering massage and CQVT services. The site is open-source and welcomes suggestions through pull requests.
 
+🚀 Hacktoberfest Participation 2024: Contributions to this project are welcome during Hacktoberfest! Please feel free to submit your pull requests.
+
+💡 Pull Request Guidelines: When submitting a PR, please provide detailed information about your suggestions or changes. I appreciate any advice or feedback on my code, as I am always looking to improve!
+
 ## Getting Started
 
 First, run the development server:
