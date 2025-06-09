@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/react": "^19",
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.12",
+    "@types/node": "^22.15.30",
     "@types/react-dom": "^19",
     "@types/react-google-recaptcha": "^2.1.9",
     "eslint": "^9",
