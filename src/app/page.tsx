@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import Layout from "./ui/layout/layout";
 import Functioning from "./ui/functioning/functioning";
 import SocialNetwork from "./ui/socialNetwork/socialNetwork";
-import Cookies from "./components/cookies/cookies";
 
 export const metadata: Metadata = {
   title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
@@ -27,7 +26,6 @@ export default function Home() {
           </span>
         </section>
         <Analytics />
-        <Cookies />
       </main>
     </Layout>
   );
