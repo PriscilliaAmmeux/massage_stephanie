@@ -1,5 +1,5 @@
 import Layout from "../ui/layout/layout";
-import privacyPolicy from "../../../api/privacypolicy.json";
+import privacyPolicy from "../../../api/privacyPolicy.json";
 import Title from "../ui/title/title";
 import { GiPadlock } from "react-icons/gi";
 
