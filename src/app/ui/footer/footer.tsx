@@ -13,6 +13,11 @@ export default function Footer() {
             className="hover:text-pink-700 hover:font-bold cursor-pointer">
             Mentions légales
           </a>
+          <a
+            href="/privacy"
+            className="hover:text-pink-700 hover:font-bold cursor-pointer">
+            Politique de confidentialité
+          </a>
         </div>
         <div className="flex justify-center text-xl">~</div>
         <div>

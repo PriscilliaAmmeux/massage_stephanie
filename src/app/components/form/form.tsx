@@ -13,6 +13,7 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
+  const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -32,6 +33,12 @@ export default function Form() {
     if (!regex.test(phone)) {
       alert(
         "Veuillez entrer un numéro de téléphone valide exemple 06 XX XX XX XX."
+      );
+      return;
+    }
+    if (!acceptedPrivacy) {
+      alert(
+        "Veuillez accepter la politique de confidentialité pour envoyer le formulaire."
       );
       return;
     }
@@ -144,7 +151,32 @@ export default function Form() {
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
-      <Button type="submit" text="Envoyer mon message" aria-label="Cliquez sur le bouton pour envoyer le message"/>
+      <div className="flex items-start mb-4">
+        <input
+          type="checkbox"
+          id="privacy"
+          required
+          checked={acceptedPrivacy}
+          onChange={(e) => setAcceptedPrivacy(e.target.checked)}
+          className="mt-1 mr-2"
+        />
+        <label htmlFor="privacy" className="text-sm text-gray-800">
+          J’accepte la collecte et le traitement de mes données personnelles
+          conformément à la{" "}
+          <a
+            href="/privacy"
+            target="_blank"
+            className="text-pink-700 underline">
+            politique de confidentialité
+          </a>
+          .
+        </label>
+      </div>
+      <Button
+        type="submit"
+        text="Envoyer mon message"
+        aria-label="Cliquez sur le bouton pour envoyer le message"
+      />
     </form>
   );
 }
