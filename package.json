@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/react": "^19",
-    "@playwright/test": "^1.53.1",
+    "@playwright/test": "^1.53.2",
     "@types/node": "^24.0.3",
     "@types/react-dom": "^19",
     "@types/react-google-recaptcha": "^2.1.9",
