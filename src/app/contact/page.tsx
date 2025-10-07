@@ -3,9 +3,35 @@ import Form from "../components/form/form";
 import InfoContact from "../components/infoContact/infoContact";
 import Layout from "../ui/layout/layout";
 
+import { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Contact - Stéphanie HEUDRE",
+  title: "Contact Stephanie Heudre Massages Quesnoy-sur-Deule",
+  description:
+    "Contactez Stephanie Heudre pour prendre rendez-vous pour des massages Assis Amma ou Chi Nei Tsang à Quesnoy-sur-Deule dans le Nord.",
+  keywords: [
+    "contact-stephanie-heudre",
+    "rendez-vous-massage",
+    "massages-assis-amma",
+    "chi-nei-tsang",
+    "massage-bien-etre-quesnoy-sur-deule",
+    "praticienne-massage-nord",
+    "massage-therapeutique",
+    "massage-relaxation",
+    "soin-massage-individuel",
+    "bien-etre-quesnoy-sur-deule",
+  ],
+  openGraph: {
+    title: "Contact Stephanie Heudre Massages Quesnoy-sur-Deule",
+    description:
+      "Contactez Stephanie Heudre pour prendre rendez-vous pour des massages Assis Amma ou Chi Nei Tsang à Quesnoy-sur-Deule dans le Nord.",
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.massage-stephanie-heudre.fr/contact",
+    siteName: "Stephanie Heudre Massages Quesnoy-sur-Deule",
+  },
 };
+
 
 export default function Page() {
   return (
