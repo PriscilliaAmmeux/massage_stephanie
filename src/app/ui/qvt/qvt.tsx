@@ -44,7 +44,7 @@ export default function Qvt() {
         </div>
         <p className="text-lg leading-relaxed mb-4">
           <span className="font-bold">
-            La &quot;Qualité de Vie au Travail&quot; 
+            La &quot;Qualité de Vie au Travail&quot;
           </span>
           est un aspect important de votre entreprise car le bien-être de vos
           employés est essentiel pour leur productivité et leur satisfaction au
@@ -81,8 +81,12 @@ export default function Qvt() {
           pour découvrir comment je peux vous aider à transformer votre
           entreprise en un lieu de travail épanouissant et productif.
         </p>
-        <div className="flex justify-center md:justify-start">
-          <ButtonContactMe />
+        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-center items-center">
+          <ButtonContactMe
+            type="contact"
+            className="w-11/12 max-w-xs md:w-auto"
+          />
+          <ButtonContactMe type="call" className="w-11/12 max-w-xs md:w-auto" />
         </div>
       </div>
     </section>
