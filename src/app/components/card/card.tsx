@@ -37,12 +37,19 @@ export default function Card({
             </p>
           ))
         )}
-        <div className="absolute bottom-0 flex flex-col justify-center mb-4">
+        <div className=" flex flex-col justify-center mt-4 mb-4">
           <p className="text-gray-700 text-base font-bold">
             Durée : {duration}
           </p>
           <p className="text-gray-700 text-base font-bold ">Tarif: {price} €</p>
         </div>
+        <button className="absolute bottom-0 left-0 w-full flex justify-center mb-4">
+          <a
+            href="tel:0676397406"
+            className="bg-pink-700 text-white text-center px-4 py-2 rounded hover:bg-pink-800 transition-colors font-semibold w-11/12 max-w-xs">
+            Prendre rendez-vous
+          </a>
+        </button>
       </div>
     </section>
   );

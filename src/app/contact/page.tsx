@@ -3,8 +3,6 @@ import Form from "../components/form/form";
 import InfoContact from "../components/infoContact/infoContact";
 import Layout from "../ui/layout/layout";
 
-import { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Contact Stephanie Heudre Massages Quesnoy-sur-Deule",
   description:
@@ -31,7 +29,6 @@ export const metadata: Metadata = {
     siteName: "Stephanie Heudre Massages Quesnoy-sur-Deule",
   },
 };
-
 
 export default function Page() {
   return (
