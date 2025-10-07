@@ -5,7 +5,30 @@ import Layout from "../ui/layout/layout";
 import legalNotices from "../../../api/legalNotices.json";
 
 export const metadata: Metadata = {
-  title: "Mentions légales - Stéphanie HEUDRE",
+  title: "Mentions legales Stephanie Heudre Massages Quesnoy-sur-Deule",
+  description:
+    "Consultez les mentions legales du site de Stephanie Heudre, praticienne de massages Assis Amma et Chi Nei Tsang à Quesnoy-sur-Deule dans le Nord.",
+  keywords: [
+    "mentions-legales-stephanie-heudre",
+    "praticienne-massage-quesnoy-sur-deule",
+    "massages-assis-amma",
+    "chi-nei-tsang",
+    "massage-bien-etre-nord",
+    "site-web-massage",
+    "informations-legales",
+    "protection-donnees",
+    "rgpd-massage",
+    "legal-notices",
+  ],
+  openGraph: {
+    title: "Mentions legales Stephanie Heudre Massages Quesnoy-sur-Deule",
+    description:
+      "Consultez les mentions legales du site de Stephanie Heudre, praticienne de massages Assis Amma et Chi Nei Tsang à Quesnoy-sur-Deule dans le Nord.",
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.massage-stephanie-heudre.fr/mentions-legales",
+    siteName: "Stephanie Heudre Massages Quesnoy-sur-Deule",
+  },
 };
 
 export default function LegalNotices() {
@@ -29,7 +52,6 @@ export default function LegalNotices() {
               ) : (
                 <p className="mb-2">{notice.content}</p>
               )}
-             
             </div>
           ))}
         </div>

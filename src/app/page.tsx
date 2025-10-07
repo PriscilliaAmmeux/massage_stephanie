@@ -6,10 +6,32 @@ import Functioning from "./ui/functioning/functioning";
 import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 
 export const metadata: Metadata = {
-  title: "Stéphanie Heudre - Massage bien-être à domicile et au travail",
+  title:
+    "Stéphanie Heudre Praticienne Massages Assis Amma Chi Nei Tsang Quesnoy-sur-Deule",
   description:
-    "Massages bien-être par Stéphanie Heudre, infirmière diplômée : massages relaxants à domicile/entreprise, Chi Nei Tsang, QVT et RSE. Comines et alentours.",
+    "Stéphanie Heudre propose des massages Assis Amma et Chi Nei Tsang à Quesnoy-sur-Deule pour le bien-être et la relaxation.",
+  keywords: [
+    "stephanie-heudre",
+    "massages-assis-amma",
+    "chi-nei-tsang",
+    "massage-bien-etre-quesnoy-sur-deule",
+    "praticienne-massage-nord",
+    "massage-relaxation",
+    "massage-therapeutique",
+    "bien-etre-quesnoy-sur-deule",
+  ],
+  openGraph: {
+    title:
+      "Stéphanie Heudre Praticienne Massages Assis Amma Chi Nei Tsang Quesnoy-sur-Deule",
+    description:
+      "Découvrez Stéphanie Heudre et ses massages Assis Amma et Chi Nei Tsang à Quesnoy-sur-Deule pour votre bien-être.",
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.massage-stephanie-heudre.fr",
+    siteName: "Stéphanie Heudre Massages Bien-être Quesnoy-sur-Deule",
+  },
 };
+
 
 export default function Home() {
   return (
