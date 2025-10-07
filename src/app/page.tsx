@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "massage-relaxation",
     "massage-therapeutique",
     "bien-etre-quesnoy-sur-deule",
+    "massage-en-entreprise",
+    "qvt",
   ],
   openGraph: {
     title:
@@ -31,7 +33,6 @@ export const metadata: Metadata = {
     siteName: "Stéphanie Heudre Massages Bien-être Quesnoy-sur-Deule",
   },
 };
-
 
 export default function Home() {
   return (
