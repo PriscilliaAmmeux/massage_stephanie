@@ -12,7 +12,9 @@ export default function Functioning() {
         vous recontacterai dans les plus brefs délais pour convenir d&apos;un
         rendez-vous.
       </p>
-      <ButtonContactMe />
+      <div>
+        <ButtonContactMe type="contact" />
+      </div>
     </section>
   );
 }
