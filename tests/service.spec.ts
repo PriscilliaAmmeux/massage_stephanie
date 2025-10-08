@@ -23,6 +23,6 @@ test("test", async ({ page }) => {
     .click();
   await page.getByRole("link", { name: "Mentions légales" }).click();
   const page12Promise = page.waitForEvent("popup");
-  await page.getByRole("link", { name: "www.priscillia-ammeux-" }).click();
+  await page.getByRole("link", { name: "www.pixelia-and-co.fr" }).click();
   const page12 = await page12Promise;
 });
